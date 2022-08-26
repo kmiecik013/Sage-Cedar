@@ -1,0 +1,61 @@
+
+
+.home-page {
+  display:flex;
+  justify-content: center; 
+}
+
+
+.fade-in-text {
+  margin-top: 450px;
+  margin-bottom: 450px;
+  font-family: "Overpasss";
+  font-size: 70px;
+  color: red;
+  opacity: 0.7; 
+  margin:30px, 30px;
+
+  animation: fadeinout 10s linear 1 forwards;
+  -webkit-animation: fadeIn 5s;
+  -moz-animation: fadeIn 5s;
+  -o-animation: fadeIn 5s;
+  -ms-animation: fadeIn 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@-ms-keyframes fadeIn {
+   0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+
+@media (max-width: 1440px) {
+  .fade-in-text {
+    font-size: 60px;
+}
+}

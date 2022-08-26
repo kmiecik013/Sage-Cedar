@@ -1,0 +1,290 @@
+.taylor-title {
+  margin-left: 120px;
+  font-size: 100px;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 150px;
+}
+
+
+.taylor-description {
+
+  margin-top:50px;
+  width: 800px;
+  font-family: "Overpass";
+  font-size: 21px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+}
+
+.sage-initiation {
+  
+  width: 800px;
+  font-family: "Overpass";
+  margin-bottom: 40px;
+  font-size: 21px;
+  
+}
+
+.sage-cedar-description {
+  
+  width: 800px;
+  font-family: "Overpass";
+  font-size: 21px;
+  margin-bottom: 40px;
+}
+
+.more-cedar-description {
+
+  width: 800px;
+  font-family: "Overpass";
+ 
+  font-size: 21px;
+}
+
+.taylor-pic {
+  margin-top: 60px;
+  border-radius: 5px;
+  height:770px;
+  box-shadow: 0px 0px 15px -5px;
+  margin-left: 30px;
+}
+
+.structure-taylor-page {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1440px) {
+  .all-descriptions {
+    margin:0 40px;
+    font-size: 15px;
+    margin-top:10px;
+    
+  }
+
+  .taylor-pic {
+    height:600px;
+    margin-top: 80px;
+    margin-left: 70px;
+    
+  }
+
+  .taylor-description {
+    width: 650px;
+    font-size: 17px;
+    margin-top:70px;
+  }
+  
+  .sage-initiation {
+    width: 650px;
+    font-size: 17px;
+  }
+  
+  .sage-cedar-description {
+    width: 650px;
+    font-size: 17px;
+  }
+  
+  .more-cedar-description {
+    width: 650px;
+    font-size: 17px;
+  }
+
+  .taylor-title {
+    margin-left: 80px;
+
+}
+
+}
+
+@media (max-width: 1400px){
+
+  .all-descriptions {
+    margin:0 40px;
+    font-size: 15px;
+    margin-top:10px
+  }
+
+  .taylor-description {
+    width: 600px;
+    font-size: 17px;
+  }
+  
+  .sage-initiation {
+    width: 600px;
+    font-size: 17px;
+  }
+  
+  .sage-cedar-description {
+    width: 600px;
+    font-size: 17px;
+  }
+  
+  .more-cedar-description {
+    width: 600px;
+    font-size: 17px;
+  }
+  }
+
+@media (max-width: 768px){
+  .structure-taylor-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.all-descriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.taylor-description {
+  width: 700px;
+  margin-bottom: 20px;
+  margin-top:10px;
+}
+
+.sage-initiation {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.sage-cedar-description {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.more-cedar-description {
+  width: 700px;
+  margin-bottom: 20px;
+}
+
+.taylor-title {
+  font-size: 90px;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+.taylor-pic {
+  height:700px;
+  margin-top: 50px;
+}
+
+}
+
+@media (max-width: 425px){
+  .structure-taylor-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.all-descriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.taylor-description {
+  width: 380px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  margin-top:0px;
+}
+
+.sage-initiation {
+  width: 380px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.sage-cedar-description {
+  width: 380px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.more-cedar-description {
+  width: 380px;
+  margin-bottom: 60px;
+  font-size: 13px;
+}
+
+.taylor-pic {
+  height:500px;
+  font-size: 15px;
+  margin-right: 33px;
+  margin-top: 30px;
+}
+.taylor-title {
+  margin-left: 20px;
+  font-size: 55px;
+  margin-bottom: 0px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 80px;
+}
+
+}
+
+
+
+
+@media (max-width: 375px){
+
+  .structure-taylor-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+.all-descriptions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.taylor-description {
+  width: 350px;
+  font-size: 15px;
+  margin-top:10px;
+}
+
+.sage-initiation {
+  width: 350px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.sage-cedar-description {
+  width: 350px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.more-cedar-description {
+  width: 350px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  
+}
+
+.taylor-pic {
+  height:500px;
+  font-size: 15px;
+}
+
+.taylor-title {
+  margin-left: 0px;
+  font-size: 52px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Dancing Script', cursive;
+  margin-top: 60px;
+}
+
+}
+

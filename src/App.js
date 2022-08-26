@@ -6,13 +6,20 @@ import Footer from './components/Footer';
 import Service from './components/Service';
 import Contact from './components/Contact';
 import Crisis from './components/Crisis';
-import Navbar from './components/Navbar';
+import Navigationbar from './components/Navbar';
 import Taylor from './components/Taylor';
 import Button from 'react-bootstrap/Button';
+import Home from './components/Home';
+import Navbartwo from './components/Navbartwo';
+import NavBarThree from './components/NavBarThree';
+import Card from './components/Card';
+import Sage from './components/Sage';
+import Contact2 from './components/Contact2'
+import ContactInfo from './components/ContactInfo'
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import { faCoffee} from '@fortawesome/free-solid-svg-icons'
-import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+
 
 
 
@@ -20,27 +27,31 @@ function App() {
   return (
 
     <div>
-<Button>My Button</Button>
 
-<FontAwesomeIcon icon={faCoffee} classsName="Coffee-icon"></FontAwesomeIcon>
-<FontAwesomeIcon icon={faYoutube}></FontAwesomeIcon>
-<FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+  <NavBarThree />
 
+   <Home />
 
-    <Header />
-    <Navbar />
-    <About />
-    <Service />
-    <Taylor />
+   <Sage />
+
+   <About />
+
+  <Sage />
+   <Taylor />
+
+   <Sage />
+   <Service />
+
+   <Sage />
+   <Contact />
+   
     
-    <Contact />
-    <Footer />
-    <Crisis />
+   
+    
    
 
     
 
-    <h1> Hello  </h1>
 
   
 

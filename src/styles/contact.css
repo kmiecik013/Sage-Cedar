@@ -1,0 +1,230 @@
+.contact-methods-left {
+  display:flex;
+  justify-content: center;
+  flex-direction:column;
+  margin-right: 100px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+}
+
+.form-structure {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #DAE2B6;
+  box-shadow: 0px 0px 15px -5px;
+}
+
+.more-structure {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-subtitle {
+  text-align: center;
+}
+
+.specific-contact-method  {
+  display: flex;
+  justify-content: space-around;
+  flex-direction:column;
+  font-family: "Overpasss";
+  font-size: 30px;
+  padding-top:5px;
+  
+}
+
+.left {
+  width: 300px;
+}
+
+.contact-one {
+  align-self: center;
+}
+
+.input {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 15px;
+  border:none;
+  box-shadow: 0px 0px 5px -3px;
+  margin:10px 0 10px 0;
+}
+.input:hover {
+  font-size: 20px;
+  border-radius: 15px;
+  border:none;
+  box-shadow: 0px 0px 20px -5px;
+}
+
+::-webkit-input-placeholder {
+  color:#A9A9A9;
+  font-style: italic;
+}
+.submit-button {
+  width: 150px;
+  height:50px;
+  background-color: #52734D;
+  color:#CCD6A6;
+  border:none;
+  border-radius:15px;
+}
+
+.submit-button:hover {
+  box-shadow: 5px 5px 15px -5px;
+  background-color: whitesmoke;
+  border: 5px solid black;
+  color:black;
+  border:none;
+  border-radius:20px;
+
+
+}
+
+.message-box {
+  width:500px;
+  height:220px;
+  margin-bottom:30px;
+  border:none;
+  border-radius:20px;
+  padding: 15px;
+}
+
+
+.message-box:hover {
+  box-shadow: 0px 0px 20px -5px;
+}
+
+.result-text {
+  font-size: 18px;
+  width:320px;
+  height:50px;
+}
+
+
+.send-and-result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-organization {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  padding:50px;
+  background-color: #F7EDDB;
+  border-radius: 20px;
+
+}
+
+
+.name-pic-pair {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 20px 0; 
+}
+
+.social-media-tags {
+  display: flex;
+  justify-content: center;
+  margin:20px 0 20px 0;
+}
+.sm-tag {
+  margin:0 15px 0 15px;
+  font-size: 40px;
+  color: #52734D
+}
+
+.sm-tag:hover {
+  box-shadow: 0px 0px 5px -3px;
+  transform: scale(1.05);
+} 
+
+.left-tag {
+  font-size: 40px;
+  color: #52734D;
+  font-family: "Overpasss";
+}
+
+.info-text {
+  align-items: center;
+  font-size: 20px;
+}
+
+.sage-email {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.phone-number {
+  margin-top: 10px;
+}
+
+
+@media (max-width: 768px){
+
+  .form-structure {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #DAE2B6;
+    box-shadow: 0px 0px 15px -5px;
+  
+  }
+
+  .more-structure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contact-subtitle {
+    text-align: center;
+    width: 400px;
+  }
+
+  .message-box {
+    width:500px;
+    height:220px;
+    margin-bottom:30px;
+    border:none;
+    border-radius:10px;
+    padding: 15px;
+    margin-left: 20px;
+  }
+}
+
+
+@media (max-width: 768px){
+
+  .message-box {
+    width:370px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .message-box {
+    width:350px;
+  }
+
+  .contact-subtitle {
+    font-size: 20px;
+    width: 350px;
+  }
+  
+  .specific-contact-method {
+    width: 350px;
+  }
+  .contact-methods-left { 
+  margin-right: 0px;
+  margin-left: 0px;
+  }
+
+.column-organization {
+  width:370px;
+}
+}

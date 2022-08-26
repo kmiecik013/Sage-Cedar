@@ -1,0 +1,126 @@
+
+.subtitle-text {
+  font-family: "Overpasss";
+  font-size: 30px;
+}
+
+.service-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  margin-left: 120px;
+  margin-top: 150px;
+  margin-bottom: 120px;
+}
+
+.future-sess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.upcoming-sess-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 90px;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  
+}
+
+.service-bottom-note {
+  font-family: "Overpass";
+  font-style: italic;
+  font-size: 40px;
+  text-align: center;
+}
+@media (max-width: 1440px) {
+  .service-title {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .service-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 90px;
+    margin-left: 0px;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .upcoming-sess-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 90px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+  }
+  
+  .service-bottom-note {
+    font-family: "Overpass";
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+}
+
+
+
+@media (max-width: 425px){
+
+  .service-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    margin-left: 80px;
+  }
+
+  .upcoming-sess-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .service-bottom-note {
+    font-family: "Overpass";
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px){
+
+  .service-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 70px;
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .upcoming-sess-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 50px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    
+  }
+  
+  .service-bottom-note {
+    font-family: "Overpass";
+    font-style: italic;
+    font-size: 25px;
+    text-align: center;
+  }
+
+
+}

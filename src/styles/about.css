@@ -1,0 +1,209 @@
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  flex-direction:column
+}
+
+.sage-img {
+  height:720px;
+  border-radius: 10px;
+  margin-right:80px;
+  box-shadow: 0px 0px 15px -5px;
+  
+}
+
+.about-page-structure {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.art-therapy-description {
+
+  width: 800px;
+  font-family: "Overpass";
+  font-size: 27px;
+  margin-top:200px;
+}
+
+.art-subtitle {
+  margin-left:120px;
+  font-size: 100px;
+  font-family: 'Dancing Script', cursive;
+
+}
+@media (max-width: 1440px) {
+
+  .art-subtitle {
+    margin-left: 80px;
+  }
+  .sage-img {
+    height:550px;
+    border-radius: 10px;
+    margin-right:80px;
+  }
+  .art-therapy-description {
+
+    width: 550px;
+    font-family: "Overpass";
+    font-size: 23px;
+    margin-top:45px;
+  }
+}
+
+@media (max-width: 1024px){ 
+  .sage-img {
+    height:459px;
+    border-radius: 10px;
+    margin-right:80px;
+  }
+  
+  .art-therapy-description {
+
+      width: 450px;
+      font-family: "Overpass";
+      font-size: 20px;
+      margin-top:45px;
+    }
+
+    .about-page-structure {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-around;
+      margin-left:50px;
+    }
+}
+
+
+
+
+
+@media (max-width: 768px){ 
+  .sage-img {
+    height:600px;
+    border-radius: 10px;
+    margin-right:80px;
+  }
+  
+  .art-therapy-description {
+
+      width: 700px;
+      font-family: "Overpass";
+      font-size: 20px;
+      margin-top:45px;
+      margin-right: 50px;
+    }
+
+    .about-page-structure {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    .art-subtitle {
+      font-size: 80px;
+      font-family: 'Dancing Script', cursive;
+      margin-right: 20px;
+      margin-left:80px;
+    }
+}
+
+@media (max-width: 425px){ 
+
+  .sage-img {
+    height:400px;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  .art-therapy-description {
+
+      width: 390px;
+      font-family: "Overpass";
+      font-size: 15px;
+      margin-top:30px;
+      margin-bottom: 50px;
+    }
+
+    .about-page-structure {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .art-subtitle {
+      font-size: 48px;
+      font-family: 'Dancing Script', cursive;
+      margin-left:20px;
+      margin-right:0px;
+    }
+}
+
+@media (max-width: 425px){ 
+
+  .sage-img {
+    height:400px;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  .art-therapy-description {
+
+      width: 320px;
+      font-family: "Overpass";
+      font-size: 15px;
+      margin-top:30px;
+      margin-bottom: 50px;
+    }
+
+    .about-page-structure {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+  
+    }
+
+    .art-subtitle {
+      font-size: 50px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      margin-left:0px;
+      margin-right:0px;
+    }
+}
+
+
+@media (max-width: 375px){ 
+
+  .sage-img {
+    height:400px;
+    border-radius: 10px;
+    margin-right: 50px;
+  }
+  
+  .art-therapy-description {
+
+      width: 320px;
+      font-family: "Overpass";
+      font-size: 15px;
+      margin-top:30px;
+      margin-bottom: 50px;
+    }
+
+    .about-page-structure {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column-reverse;
+  
+    }
+
+    .art-subtitle {
+      font-size: 45px;
+      text-align: center;
+      font-family: 'Dancing Script', cursive;
+      margin-left:0px;
+      margin-right:0px;
+    }
+}
+

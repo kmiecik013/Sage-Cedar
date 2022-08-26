@@ -1,0 +1,106 @@
+.card-container {
+  width: 600px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.5s;
+  animation: ease-in;
+  border-radius: 10px;
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 400px
+
+}
+
+.card-container:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.cards-structure {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.card-content {
+   font-family: "Overpasss";
+   margin:1rem;
+}
+
+@media (max-width: 1440px){
+  .card-container {
+    width: 520px;
+  }
+  .image-container img {
+      overflow: hidden;
+      height: 350px
+}
+}
+
+@media (max-width: 1400px){
+  .card-container {
+    width: 500px;
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 350px
+}
+}
+@media (max-width: 768px){
+
+.cards-structure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.card-container {
+  width: 500px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5px;
+  transition: 0.5s;
+  animation: ease-in;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 350px
+}
+
+
+.card-container:hover {
+  transform: scale(1.00);
+}
+}
+
+
+@media (max-width: 425px){
+  .card-container {
+    width: 340px;
+    margin-top: 0px;
+  }
+
+  .image-container img {
+    overflow: hidden;
+    height: 250px
+  
+  }
+  }
+
+  @media (max-width: 375px){
+    .card-container {
+      width: 320px;
+    }
+    
+    .image-container img {
+      overflow: hidden;
+      height: 220px
+    
+    }
+    }
