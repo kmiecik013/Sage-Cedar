@@ -1,0 +1,42 @@
+
+.sub-image-author{
+  font-size: 40 px;
+  position: absolute;
+  top:710px;
+  right:250px;
+  animation: fadeIn 11s;
+  -webkit-animation: fadeIn 11s;
+  -moz-animation: fadeIn 11s;
+  -o-animation: fadeIn 11s;
+  -ms-animation: fadeIn 11s; 
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 0.8;}
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 0.8;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 0.8;}
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 0.8;}
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 0.8;}
+}

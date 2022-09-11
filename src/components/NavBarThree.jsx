@@ -1,13 +1,23 @@
 import React, { useState } from "react";
+
 import "../styles/NavBarThree.css";
-import logo from '../images/SC.png';
+import logo from '../images/sage2.png';
 import Contact from './Contact'
+import Crisis from './Crisis'
+
+
+
 
 
 const NavBarThree = () => {
 
   const [navbar, setNavBar] =useState(false)
   const [isOpen, setIsOpen] = useState(false);
+  const [crisis, setCrisis] = useState(false);
+
+  const showCrisis = event => {
+      setCrisis(true)
+  }
 
 
 
@@ -36,11 +46,14 @@ const NavBarThree = () => {
       <div
         className={`nav-items ${isOpen && "open"}`}>
 
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#therapist">Art Therapist</a>
-          <a href="#service">Services</a>
-          <a href="#home">Contact</a>
+          <a href="/">Home</a>
+          <a href="#about"href="/">About</a>
+          <a href="/" href="#therapist">Art Therapist</a>
+          <a href="/" href="#service">Services</a>
+          <a href="/" href="#contact" className="contact-nav-option">Contact</a>
+          <a href="/blog">Blog </a>
+          
+    
         
         
          

@@ -38,60 +38,55 @@ export default function Contact() {
   };
 
   return (
-    <div>
+    <div id="contact">
       <div className="contact-one">
-
-        
-        
         <form className="form-structure" ref={form} onSubmit={sendEmail}>
-      <h1 className="contact-subtitle">Ready to take the next step? Send us a message</h1>
+          <h1 className="contact-main-title">Contact</h1>
+          <h1 className="contact-subtitle">
+            Ready to take the next step? Send us a message
+          </h1>
           <div className="more-structure">
-         
-          <div className="contact-methods-left">
-            <div className="specific-contact-method left">
-           
-              <input 
-                type="text" 
-                name="fullName"
-                placeholder="Your Name" 
-                className="input" />
+            <div className="contact-methods-left">
+              <div className="specific-contact-method left">
+                <input
+                  type="text"
+                  name="fullName"
+                  placeholder="Your Name"
+                  className="input"
+                />
+              </div>
+              <div className="specific-contact-method left">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  className="input"
+                />
+              </div>
+              <div className="specific-contact-method left">
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  className="input"
+                />
+              </div>
             </div>
-            <div className="specific-contact-method left">
-              
-              <input 
-                type="email" 
-                name="email" 
-                placeholder="Your Email" 
-                className="input" />
-            </div>
-            <div className="specific-contact-method left">
-              
-              <input 
-                type="text" 
-                name="phone"
-                placeholder="Your Phone Number" 
-                className="input" />
-            </div>
-          </div>
-          <div className="specific-contact-method right">
-            
-            <textarea 
-              name="message"
-              className="message-box"
-              placeholder="Your Message" />
+            <div className="specific-contact-method right">
+              <textarea
+                name="message"
+                className="message-box"
+                placeholder="Your Message"
+              />
 
-            <div className="send-and-result">
-            <input 
-              type="submit" 
-              value="Send" 
-              className="submit-button" />
-            <div className="result-text">{result ? <Result /> : null}</div>
+              <div className="send-and-result">
+                <div className="result-text">{result ? <Result /> : null}</div>
+                <input type="submit" value="Send" className="submit-button" />
+                
+              </div>
             </div>
-          </div>
- <ContactInfo />
           </div>
         </form>
-
       </div>
     </div>
   );

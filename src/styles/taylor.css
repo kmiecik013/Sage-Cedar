@@ -1,9 +1,14 @@
+.taylor-section {
+  background-color: #F7EDDB;
+  padding-top: 150px;
+}
+
+
 .taylor-title {
   margin-left: 120px;
   font-size: 100px;
   margin-bottom: 10px;
   font-family: 'Dancing Script', cursive;
-  margin-top: 150px;
 }
 
 
@@ -15,7 +20,9 @@
   font-size: 21px;
   margin-bottom: 40px;
   margin-top: 100px;
+  color:#52734D;
 }
+
 
 .sage-initiation {
   
@@ -23,6 +30,7 @@
   font-family: "Overpass";
   margin-bottom: 40px;
   font-size: 21px;
+  color:#52734D;
   
 }
 
@@ -32,13 +40,14 @@
   font-family: "Overpass";
   font-size: 21px;
   margin-bottom: 40px;
+  color:#52734D;
 }
 
 .more-cedar-description {
 
   width: 800px;
   font-family: "Overpass";
- 
+  color:#52734D;
   font-size: 21px;
 }
 
@@ -50,9 +59,15 @@
   margin-left: 30px;
 }
 
+.taylor-pic:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
 .structure-taylor-page {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 150px;
 }
 
 @media (max-width: 1440px) {

@@ -6,8 +6,8 @@ export default function Taylor() {
 
 
   return (
-    <div className="taylor-section" id="therapist" >
-    <h1 className="taylor-title">Meet the Therapist</h1>
+    <div className="taylor-section"  >
+    <h1 className="taylor-title" id="therapist">Meet the Therapist</h1>
 
 
     <div className="structure-taylor-page">

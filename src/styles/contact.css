@@ -2,16 +2,11 @@
   display:flex;
   justify-content: center;
   flex-direction:column;
-  margin-right: 100px;
-  margin-left: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .form-structure {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: #DAE2B6;
-  box-shadow: 0px 0px 15px -5px;
 }
 
 .more-structure {
@@ -21,8 +16,24 @@
 
 .contact-subtitle {
   text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
 }
 
+.contact-main-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  margin-left: 120px;
+  margin-bottom: 60px;
+  padding-top: 40px;
+
+}
+
+.send-and-result {
+  display: flex;
+  justify-content: space-between;
+}
 .specific-contact-method  {
   display: flex;
   justify-content: space-around;
@@ -30,11 +41,15 @@
   font-family: "Overpasss";
   font-size: 30px;
   padding-top:5px;
-  
+  width: 300px;
 }
 
 .left {
-  width: 300px;
+  margin-right: 50px;
+}
+
+.right {
+  margin-left: 60px;
 }
 
 .contact-one {
@@ -82,8 +97,7 @@
 
 .message-box {
   width:500px;
-  height:220px;
-  margin-bottom:30px;
+  height:250px;
   border:none;
   border-radius:20px;
   padding: 15px;
@@ -98,12 +112,7 @@
   font-size: 18px;
   width:320px;
   height:50px;
-}
-
-
-.send-and-result {
-  display: flex;
-  justify-content: space-between;
+  font-family: "Overpass";
 }
 
 .column-organization {
@@ -117,48 +126,6 @@
 
 }
 
-
-.name-pic-pair {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0 20px 0; 
-}
-
-.social-media-tags {
-  display: flex;
-  justify-content: center;
-  margin:20px 0 20px 0;
-}
-.sm-tag {
-  margin:0 15px 0 15px;
-  font-size: 40px;
-  color: #52734D
-}
-
-.sm-tag:hover {
-  box-shadow: 0px 0px 5px -3px;
-  transform: scale(1.05);
-} 
-
-.left-tag {
-  font-size: 40px;
-  color: #52734D;
-  font-family: "Overpasss";
-}
-
-.info-text {
-  align-items: center;
-  font-size: 20px;
-}
-
-.sage-email {
-  font-size: 13px;
-  margin-top: 10px;
-}
-
-.phone-number {
-  margin-top: 10px;
-}
 
 
 @media (max-width: 768px){

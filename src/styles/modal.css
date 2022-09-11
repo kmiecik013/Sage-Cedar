@@ -1,0 +1,42 @@
+.model-styles {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #FEFFDE;
+  z-index: 1000;
+  border-radius:20px;
+}
+
+.important-content {
+  padding: 120px 150px 150px 150px;
+}
+
+.x-botton {
+  display: flex;
+  margin-left:580px;
+  margin-top:25px;
+  border:none;
+  background-color: #FEFFDE;
+  font-size: 30px;
+  
+}
+
+@media (max-width: 425px) {
+.important-content {
+  padding: 170px 50px 0px 50px;
+
+}
+.x-botton {
+  margin-left:300px;
+  margin-top:25px;
+  font-size: 20px;
+}
+
+.model-styles {
+  width:350px;
+  height: 500px;
+  border-radius:10px;
+}
+
+}

@@ -4,9 +4,9 @@ import "../styles/about.css";
 
 export default function About() {
   return (
-    <div className="about-section"id="about">
+    <div className="about-section">
       <div className="title-strcuture">
-     <h2 className="art-subtitle">What is Art Therapy?</h2>
+     <h2 className="art-subtitle"id="about">What is Art Therapy?</h2>
      </div>
       <div className="about-page-structure">
         

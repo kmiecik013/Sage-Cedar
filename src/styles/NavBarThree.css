@@ -3,16 +3,36 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #DAE2B6;
+  background: transparent;
   width: 100%;
+  position: absolute;
 
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+  color: black;
+}
+
+.get-help-nav-option {
+  border:2px solid black;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  font-style: none;
+  padding: 10px;
 }
 
 .nav-title {
   font-weight: 700;
   font-size: 30px;
-  font-family: "Overpasss";
+  font-family: 'Dancing Script', cursive;
   font-style: none;
+}
+
+.nav-title:hover {
+  color: white;
+  box-shadow: 5px 5px 5px -5px;
 }
 
 .Navbar > .nav-logo {
@@ -21,7 +41,7 @@
   font-weight: 700;
   font-size: 27px;
   margin: 15px;
-  color: #52734D;
+  color: #C7D36F;
   font-family: "Overpasss";
   font-weight:600;
   margin-left: 40px;
@@ -60,6 +80,8 @@
 
 .Navbar > .nav-items > a:hover {
   opacity: 1;
+  color:#DFE8CC;
+  box-shadow: 15px 15px 15px -5px;
  
 }
 
@@ -70,7 +92,7 @@
   bottom: 0;
   width: 0;
   height: 2px;
-  background: #52734D;
+  background: #DFE8CC;
   transition: all 0.45s;
  
 }
@@ -119,7 +141,7 @@
     background: #DFE8CC;
     left: 0;
     width: 100%;
-    height: 41%;
+    height: 350%;
     transform: translateX(-100%);
     transition: all 0.8s;
   }

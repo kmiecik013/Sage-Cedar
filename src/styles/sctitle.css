@@ -1,0 +1,43 @@
+.home-img {
+  width:600px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top:150px;
+  animation: fadeIn 8s;
+  -webkit-animation: fadeIn 8s;
+  -moz-animation: fadeIn 8s;
+  -o-animation: fadeIn 8s;
+  -ms-animation: fadeIn 8s; 
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% { opacity: 0; }
+  45% { opacity: 0;}
+  100% { opacity: 1;}
+}
