@@ -1,47 +1,114 @@
 
 import "../styles/services.css";
+import Slider from "react-slick"; 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import individual from '../images/individual.jpeg';
 import group from '../images/group.jpeg';
 import Card from "./Card";
+import CardId1 from "./CardsId/CardId1.jsx";
+import CardId2 from "./CardsId/CardId2.jsx";
+import CardId3 from "./CardsId/CardId3.jsx";
+import CardId4 from "./CardsId/CardId4.jsx";
+import Sage from "./Sage";
+import Fade from 'react-reveal/Fade';
+import Slide from 'react-reveal/Slide';
+
 
 
 
 
 
 export default function Service() {
-
-  return (
-    <div className="service-section" id="service">
-      <h1 className="service-title">Offerings</h1>
-
-      <div className="cards-structure">
-    <Card
-      imgUrl={individual} 
-      title="Individual Sessions"
-      body="Individual art therapy sessions are great for those who need the time and space to process their thoughts, feelings, and emotions with the one-on-one support of the art therapist.
-      This can lead to in-depth personal insights and resolution." 
+  
+  function SamplePrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style}}
+        onClick={onClick}
       />
+    );
+  }
 
-    <Card
-      imgUrl ={group}
-      title ="Group Sessions"
-      body= "Group art therapy can help individuals feel supported and normalized as they work through their emotions. The groups are held in safe and sacred space so that all peoples can heal and grow. Scroll for the upcoming groups being offered." />
-    </div>
-    <div className="future-sess">
-      <h2 className="upcoming-sess-title">Upcoming Groups</h2>
-      <h2 className="service-bottom-note">All groups have been postponed until further notice</h2>
-    </div>
-   
-  </div>
-      
+  function SampleNextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, display: "block", color: "red", fontSize: "30px"}}
+        onClick={onClick}
+      />
+    );
+  }
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 10,
+    cssEase: "linear",
+    swipeToSlide: true,
+    centerMode: true,
     
-  );
+    focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 4,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll:4,
+  
+        }
+      },
+    ],
+
+     
+  };
+
+
+return (
+  <div className="service-part">
+    <Slide top>
+    <h1 className="service-title">Offerings</h1>
+    </Slide>
+    <div className="slider-part">
+
+    <Slide bottom cascade>  
+  <Slider 
+ 
+  {...settings}> 
+
+
+    <CardId1
+    className="seperate-card" >
+   </CardId1>
+  
+    <CardId2 
+    className="seperate-card">
+      </CardId2>
+  
+    <CardId3 className="seperate-card">
+    </CardId3>
+    
+    <CardId4 className="seperate-card"></CardId4>
+    
+  
+    
+  </Slider>
+  </Slide>
+  <Sage />
+  </div>
+ </div>
+)
 }
 
-function SpecificService() {
-  return (
-    <div>
-    <h1>Hello i'm here</h1>
-    </div>
-  )
-  }

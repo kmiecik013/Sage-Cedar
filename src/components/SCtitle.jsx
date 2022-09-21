@@ -13,7 +13,7 @@ export default function SCtitle(props) {
       
       <div className="sc-home-title">
         <img className="home-img" src={sageCedar} />
-        <TaylorTitle />
+      
       </div>
     </div>
   );

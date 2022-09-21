@@ -1,3 +1,11 @@
-.blog-container {
-  margin-top:100px;
+.main-blog-page {
+  position: absolute;
+  top:300px;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+}
+
+.row{
+  padding:20px;
 }

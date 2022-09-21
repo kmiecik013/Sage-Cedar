@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import "../styles/NavBarThree.css";
 import logo from '../images/sage2.png';
 import Contact from './Contact'
-import Crisis from './Crisis'
 
 
 
@@ -41,16 +40,16 @@ const NavBarThree = () => {
           src= {logo} />
           <a 
             className="nav-title"
-            href="#home">Sage and Cedar</a>
+            href="/#home">Sage and Cedar Art Therapy</a>
             </div>
       <div
         className={`nav-items ${isOpen && "open"}`}>
 
           <a href="/">Home</a>
-          <a href="#about"href="/">About</a>
-          <a href="/" href="#therapist">Art Therapist</a>
-          <a href="/" href="#service">Services</a>
-          <a href="/" href="#contact" className="contact-nav-option">Contact</a>
+          <a href="/#about">About</a>
+          <a href="/#therapist">Art Therapist</a>
+          <a href="/#service">Services</a>
+          <a href="/#contact" className="contact-nav-option">Contact</a>
           <a href="/blog">Blog </a>
           
     

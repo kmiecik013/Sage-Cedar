@@ -1,18 +1,26 @@
 
+@font-face {
+  font-family: Creation_demo;
+  src: url("../fonts/Creattion\ Demo.otf");
+}
+@font-face {
+  font-family: Antro_Vectra_Bold;
+  src: url("../fonts/Antro_Vectra_Bolder.otf");
+}
 
 .home-page {
   display:flex;
-  justify-content: center; 
+  justify-content: center;
+
+  
 }
-
-
 
 .fade-in-text {
   margin-top: 400px;
-  margin-bottom: 300px;
-  font-family: "Overpasss";
+  margin-bottom: 130px;
+  font-family: "Antro_Vectra_Bold";
   font-size: 50px;
-  color: #91C788;
+  color: #224a1b;
   opacity: 0.7; 
   margin:30px, 30px;
   animation: fadeInout 4s;
@@ -60,4 +68,18 @@
     
   }
   
+}
+
+
+@media (max-width: 768px){ 
+  .fade-in-text {
+    font-size: 40px;
+    color: #CCD6A6;
+    opacity:1; 
+    text-align: center;
+    width: 500px;
+    margin-top: 320px;
+    margin-bottom: 130px;
+    
+  }
 }

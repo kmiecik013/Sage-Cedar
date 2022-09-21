@@ -1,18 +1,27 @@
 import { useState } from 'react'  
 import individual from "../images/individual.jpeg";
 import "../styles/card.css";
+import Modal2 from "./Modal2";
+import cards from "./Cards";
 
 export default function Card(props) {
 
-  const [isShown, setIsShown] = useState(false);
-  
-  const handleClick = event => {
-    setIsShown(current => !current);
+  const getEvent = event => {
+     return event.currentTarget.id.toString()
   }
 
-  const closeClick = event => {
-    setIsShown(current => !current)
-  }
+  const handleClick = event => {
+    console.log(event.currentTarget.id) 
+    setIsOpen(true)
+  };
+
+  const [isShown, setIsShown] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
+
+
+
+
 
   return (
     <div className="card-container">
@@ -27,22 +36,18 @@ export default function Card(props) {
         <p>{props.body}</p>
       </div>
       <div>
-      <button onClick={handleClick}>More Info</button> 
-      {isShown && <SpecificService />}
+      <button className="more-info-button"
+            class={props.title}
+            key={props.id}
+            id= {props.id}
+            onClick= {handleClick} >More Info</button>
+       <Modal2 
+        
+       open={isOpen} onClose={()=> setIsOpen(false)}>
+        </Modal2>
       </div>
       </div>
     </div>
     
   );
 }
-
-function SpecificService() {
-
- 
-  return (
-    <div>
-    <h1>Hello i'm here</h1>
-   
-    </div>
-  )
-  }

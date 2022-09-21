@@ -1,15 +1,58 @@
+@font-face {
+  font-family: Antro_Vectra_Bold;
+  src: url("../fonts/Antro_Vectra_Bolder.otf");
+}
+.slick-slide  {
+  margin-top: 20px !important;
+}
 
+.slick-arrow {
+  scale:2;
+  opacity: 1;
+  margin-top:40px;
+  margin-left:50px;
+  margin-right: 50px;  
+  z-index: 1;
+  border-radius: 80px;
+  padding:1px 20px 5px 0px !important;
+
+}
+.service-part {
+  background-color: white;
+}
+
+
+.slick-next {
+  background-color:rgb(118, 156, 4) !important; 
+}
+
+.slick-prev {
+  background-color:rgb(79, 126, 54) !important; 
+}
+
+.slick-arrow:hover {
+  opacity: 1;
+}
+
+.seperate-card {
+  padding:50px;
+  height: 1000px;
+}
 .subtitle-text {
   font-family: "Overpasss";
   font-size: 30px;
 }
 
+.slider-part {
+ padding-top: 70px;
+ padding-left: 50px;
+ padding-right: 50px;
+}
+  
 .service-title {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Antro_Vectra_Bold';
   font-size: 100px;
   margin-left: 120px;
-  margin-top: 150px;
-  margin-bottom: 120px;
 }
 
 .future-sess {
@@ -19,20 +62,20 @@
   margin-top: 80px;
 }
 
-.upcoming-sess-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 90px;
-  margin-top: 80px;
-  margin-bottom: 30px;
+@media (max-width: 1200px) {
+  .slick-arrow {
+    scale:2;
+    opacity: 1;
+    margin-top:40px;
+    margin-left:50px;
+    margin-right: 50px;  
+    z-index: 1;
+    border-radius: 80px;
+    padding:1px 20px 5px 0px !important;
   
-}
+  }
+}  
 
-.service-bottom-note {
-  font-family: "Overpass";
-  font-style: italic;
-  font-size: 40px;
-  text-align: center;
-}
 @media (max-width: 1440px) {
   .service-title {
     margin-left: 80px;
@@ -42,29 +85,14 @@
 @media (max-width: 768px){
 
   .service-title {
-    font-family: 'Dancing Script', cursive;
+
     font-size: 90px;
     margin-left: 0px;
     margin-top: 100px;
     margin-bottom: 0px;
     text-align: center;
   }
-
-  .upcoming-sess-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 90px;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    
-  }
-  
-  .service-bottom-note {
-    font-family: "Overpass";
-    font-style: italic;
-    font-size: 30px;
-    text-align: center;
-  }
-  
+ 
 }
 
 

@@ -1,18 +1,24 @@
 import sage2 from "../images/sage2.jpeg";
 import Card from "react-bootstrap/Card";
 import "../styles/about.css";
+import Sage from "./Sage";
+import Slide from 'react-reveal/Slide';
 
 export default function About() {
   return (
     <div className="about-section">
+      <Slide bottom>
       <div className="title-strcuture">
+      
      <h2 className="art-subtitle"id="about">What is Art Therapy?</h2>
      </div>
+
+     </Slide>
       <div className="about-page-structure">
         
 
         
-          
+          <Slide left>
           <p className="art-therapy-description">
               Art Therapy is a therapeutic modality that uses the creative
               process of art making as a vehicle to improvement in ones
@@ -24,9 +30,14 @@ export default function About() {
               the emphasis is based on the process and self-expression, not the
               final product. Art therapy also aligns with the belief that
               everyone is innately creative.</p>
+            </Slide>
+            <Slide right>
           <img className="sage-img" src={sage2} />
+            </Slide>
        
       </div>
+      <Sage />
+
 
     
     </div>

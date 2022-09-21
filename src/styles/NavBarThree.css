@@ -1,11 +1,17 @@
+@font-face {
+  font-family: Antro_Vectra;
+  src: url("../fonts/Antro_Vectra.otf");
+}
+
 .Navbar {
   height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: transparent;
+  background: #DFE8CC;
   width: 100%;
   position: absolute;
+
 
 }
 
@@ -25,21 +31,20 @@ a:-webkit-any-link {
 
 .nav-title {
   font-weight: 700;
-  font-size: 30px;
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Antro_Vectra';
   font-style: none;
+  margin-top: 20px;
+
 }
 
 .nav-title:hover {
-  color: white;
-  box-shadow: 5px 5px 5px -5px;
+  color:black;
 }
 
 .Navbar > .nav-logo {
   display: flex;
   flex-direction:center;  
   font-weight: 700;
-  font-size: 27px;
   margin: 15px;
   color: #C7D36F;
   font-family: "Overpasss";
@@ -50,10 +55,12 @@ a:-webkit-any-link {
 .Navbar > .nav-logo > .navbar-image {
   padding-right: 5px;
   resize:none;
+  height:70px;
 }
 
 .Navbar > .nav-logo > .nav-title {
-  padding-left: 5px;
+  padding-left: 20px;
+  font-size: 30 px;
 }
 
 
@@ -81,7 +88,7 @@ a:-webkit-any-link {
 .Navbar > .nav-items > a:hover {
   opacity: 1;
   color:#DFE8CC;
-  box-shadow: 15px 15px 15px -5px;
+  text-shadow: 15px 15px 15px -5px;
  
 }
 
@@ -130,6 +137,34 @@ a:-webkit-any-link {
   margin-left: 40px;
 }
 
+@media (max-width: 1024px) {
+  .Navbar > .nav-logo > .nav-title {
+    padding-left: 20px;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: none;
+    margin-top: 20px;
+  }
+
+  .Navbar > .nav-items > a {
+  font-size: 15px;
+  }
+
+  .Navbar > .nav-logo > .navbar-image {
+    height:60px;
+    margin-left: none;
+  }
+
+  .Navbar {
+    height:100px;
+  }
+
+  .Navbar > .nav-items {
+    margin-right: 10px;
+  }
+}
+
 
 @media (max-width: 768px) {
   .Navbar > .nav-items {
@@ -146,7 +181,20 @@ a:-webkit-any-link {
     transition: all 0.8s;
   }
 
+  .Navbar {
+    height:100px;
+  }
 
+  .Navbar > .nav-logo > .nav-title {
+    padding-left: 20px;
+    font-size: 30px;
+    margin-left: 75px;
+  }
+  .Navbar > .nav-logo > .navbar-image {
+    padding-right: 5px;
+    resize:none;
+    height:60px;
+  }
 
 
 
@@ -209,8 +257,30 @@ a:-webkit-any-link {
   .nav-toggle.open > .bar::after {
     transform: rotate(-45deg) translate(26px, 26px);
   }
-
-
 }
 
+@media (max-width: 425px) {
+  .Navbar > .nav-logo > .nav-title {
+    padding-left: 20px;
+    font-size: 23px;
+    width: 220px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    padding-left: none;
+    margin-top: 20px;
+    margin-top: 10px;
+    text-align: center;
+  }
+  .Navbar > .nav-logo {
+    display: flex;
+    flex-direction:center;  
+    font-weight: 700;
+    margin: 15px;
+    color: #C7D36F;
+    font-family: "Overpasss";
+    font-weight:600;
+    margin-left: 15px;
+  }
+
+}
 

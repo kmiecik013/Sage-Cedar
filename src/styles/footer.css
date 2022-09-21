@@ -1,41 +1,82 @@
+.column-organization {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding:20px;
+  background-color: #e2fab3;
+
+}
+
+.main-contact {
+  display: flex;
+  justify-content: space-around;
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+
 .name-pic-pair {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0 20px 0; 
+  justify-content: center;
+
 }
 
 .social-media-tags {
   display: flex;
   justify-content: center;
-  margin:20px 0 20px 0;
+ 
 }
 .sm-tag {
   margin:0 15px 0 15px;
   font-size: 40px;
-  color: #52734D
+  filter: hue-rotate(0deg);
+  opacity:1;
+  transition: 0.5s;
+  animation: ease-in; 
 }
 
 .sm-tag:hover {
-  box-shadow: 0px 0px 5px -3px;
-  transform: scale(1.05);
+  transform: scale(1.1);
 } 
 
 .left-tag {
-  font-size: 40px;
-  color: #52734D;
+  font-size: 50px;
+  color: #456740;
   font-family: "Overpasss";
+  margin-right: 15px;
 }
 
 .info-text {
-  align-items: center;
-  font-size: 20px;
+  font-size: 25px;
+  margin-top: 5px;
 }
 
 .sage-email {
-  font-size: 13px;
-  margin-top: 10px;
+  font-size: 22px;
+  margin-top: 5px;
+  font-style: italic;
 }
 
-.phone-number {
-  margin-top: 10px;
+.psycology-pic {
+  width:150px;
+  border-radius: 20px;
 }
+
+.phone-number{
+  margin-top: 5px;
+  font-size: 25px;
+}
+
+
+@media (max-width: 425px){
+  .column-organization {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #F7EDDB;
+  }
+
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  }

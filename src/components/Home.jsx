@@ -2,6 +2,7 @@ import background from "../images/background2.jpeg";
 import blurpic from "../images/blur3.jpg";
 import "../styles/home.css";
 import SCtitle from './SCtitle'
+import Sage from './Sage'
 
 
 export default function Home() {

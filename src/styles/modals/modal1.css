@@ -1,0 +1,42 @@
+.model-id-style {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  z-index: 1000;
+  border-radius:10px;
+}
+
+.important-content {
+  padding: 100px 80px 150px 150px;
+}
+
+.x-botton {
+  display: flex;
+  margin-left:600px;
+  margin-top:25px;
+  border:none;
+  background-color: #edf5eb;
+  font-size: 30px;
+  
+}
+
+@media (max-width: 425px) {
+.important-content {
+  padding: 170px 50px 0px 50px;
+
+}
+.x-botton {
+  margin-left:300px;
+  margin-top:25px;
+  font-size: 20px;
+}
+
+.model-styles {
+  width:350px;
+  height: 500px;
+  border-radius:10px;
+}
+
+}
