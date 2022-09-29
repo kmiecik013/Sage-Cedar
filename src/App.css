@@ -4,34 +4,46 @@
 
 /* --Get Help ------- */
 
-html {
-  background-color: rgb(184, 234, 117);
-}
 .gethelp-postioning {
   position: fixed;
-  top:900px;
-  left:1680px;
+  top:100px;
+  left:100px;
+  z-index: 100;
 }
+
 
 .gethelp-button {
     border:none;
-    background-color: #CCD6A6;
+    background-color: #728153;
     padding:10px  20px 10px 20px;
     border-radius: 5px;
-    font-family: "Overpass";
+    font-family: "Poppins";
     font-size: 25px;
     transition: 0.5s;
     animation: ease-in;
+    color: aliceblue;
+    box-shadow: 0px 0px 12px -5px;
 }
 .gethelp-button:hover {
   color: white;
-  background-color: rgb(11, 62, 11);
-  box-shadow: 0px 0px 15px -5px;
-  transform: scale(1.10);
+  background-color: rgb(100, 131, 72);
+  box-shadow: 0px 0px 20px -5px;
+  transform: scale(1.01);
+}
+@media (max-width: 1440px){
+
+  .gethelp-postioning {
+    position: fixed;
+    top:740px;
+    left:1205px;
+    z-index: 100;
+  }
+
 }
 
 
 @media (max-width: 1200px){
+
   .gethelp-postioning {
     position: fixed;
     top:730px;
@@ -46,17 +58,13 @@ html {
 }
 .gethelp-button {
   border:none;
-  background-color: #CCD6A6;
-  padding:10px  20px 10px 20px;
-  border-radius: 5px;
-  font-family: "Overpass";
   font-size: 22px;
 }
 }
 
 @media (max-width: 768px){ 
   .gethelp-postioning {
-    top:620px;
+    top:670px;
     left:580px;
 }
 
@@ -75,11 +83,27 @@ html {
 }
   .gethelp-button {
     border:none;
-    background-color: #CCD6A6;
+  
     padding:8px  16px 8px 16px;
     border-radius: 5px;
     font-size: 17px;
  }
+} 
+
+ @media (max-width: 375px){
+  .gethelp-postioning {
+    top:700px;
+    left:230px;
+ }
+}
+
+
+@media (max-width: 320px){
+  .gethelp-postioning {
+    top:730px;
+    left:160px;
+ }
+
 }
 
 /* ----- Home -------*/

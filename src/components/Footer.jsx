@@ -46,6 +46,7 @@ export default function Footer() {
         </a>
        
       </div>
+      <h3 className="copywrite"> Copyright Sage and Cedar Art Therapy – All rights reserved </h3>
     </div>
   );
 }

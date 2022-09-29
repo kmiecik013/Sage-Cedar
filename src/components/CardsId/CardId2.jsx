@@ -27,8 +27,8 @@ export default function CardId1(props) {
         <img src={group} alt="" />
       </div>
       <div className="card-content">
-      <div className="title">
-        <h2>Group</h2>
+      <div >
+        <h2 className="title">Group</h2>
       </div>
       <div className="description"> 
         <p>"This is group" </p>

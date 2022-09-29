@@ -1,4 +1,4 @@
-import "../styles/modal2.css";
+
 import ReactDom from 'react-dom'
 import { GrClose } from "react-icons/gr";
 import Card from "./Card";

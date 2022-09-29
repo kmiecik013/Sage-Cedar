@@ -10,149 +10,156 @@
 
 
 .taylor-section {
-  padding-top: 150px;
   padding-bottom: 120px;
-  background-color: rgb(228, 241, 210);
+  background-color: #2e3e2b;
 }
 
 
 .taylor-title {
-  margin-left: 120px;
-  font-size: 100px;
+  font-size: 70px;
   margin-bottom: 10px;
+  margin-top: 50px;
   font-family: 'Antro_Vectra_Bold';
+  text-align: center;
+  color: white;
+  margin-top:100px;
 }
 
 
 .taylor-description {
-
-  margin-top:50px;
-  width: 800px;
-  font-family: "Overpass";
+  width: 900px;
+  font-family: "Poppins";
   font-size: 21px;
-  margin-bottom: 40px;
-  margin-top: 100px;
-  color:#52734D;
+
+  color:white;
+  padding:20px;
+  animation:ease-out;
+  transition: 0.5s;
+  margin:10px 0px;
 }
 
 
+
 .sage-initiation {
-  
-  width: 800px;
-  font-family: "Overpass";
-  margin-bottom: 40px;
+  width: 1000px;
+  font-family: "Poppins";
   font-size: 21px;
-  color:#52734D;
-  
+  color:#2e3e2b;
+  padding:20px;
+  animation:ease-out;
+  transition: 0.7s;
+  color:white;
+  margin:10px 0px;
+}
+
+.sage-initiation:hover {
+  background-color: rgb(246, 246, 245);
+  color:#2e3e2b;
+  border-radius: 15px;
 }
 
 .sage-cedar-description {
   
   width: 800px;
-  font-family: "Overpass";
+  font-family: "Poppins";
   font-size: 21px;
-  margin-bottom: 40px;
-  color:#52734D;
+  color:#2e3e2b;
+  padding:15px;
+  animation:ease-out;
+  transition: 0.5s;
+  color:white;
+  margin:10px 0px;
+}
+
+.sage-cedar-description:hover {
+  background-color: rgb(246, 246, 245);
+  color:#2e3e2b;
+  border-radius: 15px;
 }
 
 .more-cedar-description {
-
   width: 800px;
-  font-family: "Overpass";
+  font-family: "Poppins";
   color:#52734D;
   font-size: 21px;
+  padding: 15px;
+  animation:ease-out;
+  transition: 0.5s;
+  color:white;
+  margin:10px 0px;
+}
+
+.more-cedar-description:hover {
+  background-color: rgb(59, 100, 3);
+  color:white;
+  border-radius: 15px;
 }
 
 .taylor-pic {
-  margin-top: 60px;
   border-radius: 5px;
-  height:770px;
-  box-shadow: 0px 0px 10px -5px;
-  margin-left: 30px;
+  height:950px;
+  margin-top:100px;
+
 }
 
 .taylor-pic:hover {
   opacity: 0.8;
   cursor: pointer;
+  box-shadow: 0px 0px 10px -5px;
+  opacity: 0.5;
+  
 }
 
 .structure-taylor-page {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-bottom: 0px;
 }
 
 @media (max-width: 1440px) {
   .all-descriptions {
-    margin:0 40px;
     font-size: 15px;
     margin-top:10px;
     
   }
 
   .taylor-pic {
-    height:600px;
-    margin-top: 80px;
-    margin-left: 70px;
+    height:800px;
+
+  }
+
+  .taylor-description {
+    width: 800px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  
+  .sage-initiation {
+    width: 800px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  
+  .sage-cedar-description {
+    width: 800px;
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+  
+  .more-cedar-description {
+    width: 800px;
+    font-size: 17px;
     
   }
 
-  .taylor-description {
-    width: 650px;
-    font-size: 17px;
-    margin-top:70px;
-  }
-  
-  .sage-initiation {
-    width: 650px;
-    font-size: 17px;
-  }
-  
-  .sage-cedar-description {
-    width: 650px;
-    font-size: 17px;
-  }
-  
-  .more-cedar-description {
-    width: 650px;
-    font-size: 17px;
-  }
-
-  .taylor-title {
-    margin-left: 80px;
-
-}
-
-}
-
-@media (max-width: 1400px){
-
   .all-descriptions {
-    margin:0 40px;
-    font-size: 15px;
-    margin-top:10px
+    margin-right: 20px;
   }
 
-  .taylor-description {
-    width: 600px;
-    font-size: 17px;
-  }
-  
-  .sage-initiation {
-    width: 600px;
-    font-size: 17px;
-  }
-  
-  .sage-cedar-description {
-    width: 600px;
-    font-size: 17px;
-  }
-  
-  .more-cedar-description {
-    width: 600px;
-    font-size: 17px;
-  }
-  }
+
+}
+
+
 
 
 @media (max-width: 1024px){
@@ -199,38 +206,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 10px;
+  margin-right: 0px;
 }
 .taylor-description {
   width: 700px;
-  margin-bottom: 20px;
-  margin-top:10px;
+  margin-bottom: 0px;
 }
 
 .sage-initiation {
   width: 700px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .sage-cedar-description {
   width: 700px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .more-cedar-description {
   width: 700px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .taylor-title {
   font-size: 80px;
-  margin-bottom: 10px;
-  margin-top: 100px;
-  margin-left: 80px;
-}
-.taylor-pic {
-  height:700px;
+  margin-bottom: 0px;
   margin-top: 50px;
+  margin-right:20px;
+}
+
+.taylor-pic {
+  height:550px;
+  margin-top: 50px;
+  margin-left: 0px;
+  border-radius: 20px;
 }
 
 }
@@ -332,7 +342,7 @@
 }
 
 .taylor-pic {
-  height:500px;
+  height:400px;
   font-size: 15px;
 }
 

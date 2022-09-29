@@ -54,3 +54,11 @@
     width: 350px;
   }
 }
+
+
+@media (max-width: 320px){
+
+  .home-img {
+    width:300px;
+  }
+}

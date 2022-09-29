@@ -1,4 +1,4 @@
-import taylor from "../images/taylor3.jpeg";
+import taylor from "../images/tayler5.jpg";
 import "../styles/taylor.css";
 import Sage from "./Sage";
 import Slide from 'react-reveal/Slide';
@@ -6,19 +6,21 @@ import Slide from 'react-reveal/Slide';
 
 export default function Taylor() {
   return (
-    <div className="taylor-section">
-      <Slide top>
-      <h1 className="taylor-title" id="therapist">
-        Meet the Therapist
-      </h1>
-      </Slide>
+    <div className="taylor-section"id="therapist">
+    
+      
+    
 
       <div className="structure-taylor-page">
-        <Slide left>
+      
         <img className="taylor-pic" src={taylor} />
-        </Slide>
-        <Slide right>
+        
+        
         <div className="all-descriptions">
+          
+          <h1 className="taylor-title">
+        Meet the Therapist
+      </h1>
           
           <p className="taylor-description">
             My name is Tayler Schenkeveld. I am a Métis woman and professionally
@@ -53,9 +55,8 @@ export default function Taylor() {
             Art Therapy session
           </p>
         </div>
-        </Slide>
+       
       </div>
-      <Sage />
     </div>
   );
 }

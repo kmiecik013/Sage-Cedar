@@ -26,8 +26,8 @@ export default function CardId1(props) {
         <img src={individual} alt="" />
       </div>
       <div className="card-content">
-      <div className="title">
-        <h2>Individual</h2>
+      <div >
+        <h2 className="title">Individual</h2>
       </div>
       <div className="description"> 
         <p>"Hello I'm here" </p>

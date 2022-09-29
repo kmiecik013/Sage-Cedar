@@ -1,42 +1,107 @@
+@font-face {
+  font-family: Antro_Vectra_Bold;
+  src: url("../../fonts/Antro_Vectra_Bolder.otf");
+}
+
+@font-face {
+  font-family: Charlotte;
+  src: url("../../fonts/Charlotte.otf");
+}
+
+@font-face {
+  font-family: Bacalisties;
+  src: url("../../fonts/Bacalisties.ttf");
+}
+
+
 .model-id-style {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: whitesmoke;
+  background-color:whitesmoke;
   z-index: 1000;
   border-radius:10px;
 }
-
-.important-content {
-  padding: 100px 80px 150px 150px;
-}
-
-.x-botton {
+.important-contentID {
   display: flex;
-  margin-left:600px;
-  margin-top:25px;
-  border:none;
-  background-color: #edf5eb;
-  font-size: 30px;
-  
-}
-
-@media (max-width: 425px) {
-.important-content {
-  padding: 170px 50px 0px 50px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 0px 20px 0px;
 
 }
-.x-botton {
-  margin-left:300px;
-  margin-top:25px;
+.modal-title {
+  text-align: center;
+  margin: 20px 0 0px 20px;
+  font-family: "Bacalisties";
+  font-weight: bolder;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+.modal-image {
+  object-fit: none;
+  width:800px;
+  height:200px;
+  border-radius: 10px 10px 0px 0;
+}
+
+.modal-price {
+  padding: 0px 60px 30px 60px;
+  font-size: 20px;
+  font-family: "Overpasss";
+}
+
+.modal-description {
+  padding: 0px 60px 10px 60px;
+  font-family: "Overpasss";
   font-size: 20px;
 }
 
-.model-styles {
-  width:350px;
-  height: 500px;
-  border-radius:10px;
+.x-bottonID {
+  position: absolute;
+  top:20px;
+  right:20px;
+  border:none;
+  object-fit: none;
+  background-color:transparent;
+  height:30px;
+  font-size: 30px;
+  animation:ease-out;
+  transition: 0.5s;
+
+}
+.x-bottonID:hover {
+  transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+
+  .modal-image {
+    width:600px;
+    height:150px;
+  
+  }
+}
+
+
+@media (max-width: 425px) {
+
+  .modal-image {
+    width:400px;
+    height:200px;
+  }
+
+  .modal-title {
+    font-size: 50px;
+    padding-bottom: 40px;
+
+  }
+
+}
+
+@media (max-width: 425px) {
+  .modal-image {
+    width:400px;
+    height:200px;
+  }
 }

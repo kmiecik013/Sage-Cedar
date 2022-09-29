@@ -3,10 +3,6 @@
   src: url("../fonts/Antro_Vectra_Bolder.otf");
 }
 
-.contact-one {
-  background-color: rgb(228, 241, 210); 
-}
-
 .contact-methods-left {
   display:flex;
   justify-content: center;
@@ -15,44 +11,62 @@
 }
 
 .form-structure {
-  background-color: #cdde81;
-  margin-right: 120px;
-  margin-left: 120px;
+  margin-top: 50px;
+  background-color: #728153;
+  margin-right: 50px;
+  margin-left: 50px;
   border-radius: solid 2px black;
   border-radius: 15Px;
   margin-bottom: 100px;
 }
+
 
 .more-structure {
   display: flex;
   justify-content: center;
 }
 
-.contact-subtitle2 {
-  text-align: center;
-  font-family: 'Overpasss';
-}
 
 .contact-subtitle1 {
-  margin-bottom: 20px;
-  font-family: 'Overpasss';
+  font-family: "Poppins";
+  text-align: center;
+  opacity: 0.7;
+  color:whitesmoke;
+}
+
+.contact-one {
+  padding-top:70px;
+}
+
+.subtitle2 {
+  font-family: "Poppins";
   text-align: center;
   padding-bottom: 30px;
+  opacity: 0.7;
+  color:whitesmoke
 }
+
+.result2 {
+  display: none;
+}
+
 
 .contact-main-title {
   font-family: 'Antro_Vectra_Bold';
   font-size: 100px;
   margin-left: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding-top: 100px;
-
+  color:whitesmoke
 }
 
 
 .send-and-result {
   display: flex;
   justify-content: space-between;
+  margin-right:200px;
+  margin-left:200px;
+  
 }
 .specific-contact-method  {
   display: flex;
@@ -67,8 +81,6 @@
 .left {
   margin-right: 50px;
 }
-
-
 
 .input {
   font-size: 20px;
@@ -92,29 +104,39 @@
   font-style: italic;
 }
 .submit-button {
-  width: 150px;
-  height:50px;
-  background-color: #52734D;
-  color:#CCD6A6;
+  width: 300px;
+  padding:13px 0;
+  background-color: #bef8a3;
+  color:black;
   border:none;
   border-radius:5px;
-  transition: 0.5s;
+  transition: 0.2s;
   animation: ease-in;
-  margin-top:10px;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+  font-size: 20px;
+  margin-top: 10px;
+
 }
 
 .submit-button:hover {
-  box-shadow: 5px 5px 5px -5px;
-  background-color: whitesmoke;
-  border: 5px solid black;
-  color:black;
+  transform: scale(1.05);
+  background-color: #91b689;
+  color:white;
   border:none;
-  border-radius:10px;
+  box-shadow: 0px 0px 5px -5px;
+  font-size: 20px;
+
 }
+
+.submit-position2 {
+  display:none
+}
+
 
 .message-box {
   width:600px;
-  height:240px;
+  height:280px;
   border:none;
   border-radius:5px;
   padding: 15px;
@@ -132,14 +154,13 @@
 }
 
 .result-text {
-  font-size: 18px;
-  width:320px;
+  margin-top: 20px;
+  font-size: 20px;
   height:50px;
   font-family: "Overpass";
-  padding-top: 10px;
+  margin-top: 5px;
+  color:white;
 }
-
-
 
 
 @media (max-width: 768px){
@@ -148,46 +169,93 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    background-color: #DAE2B6;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:0px;
+    padding-bottom: 10px;
+    background-color: #728153;
     box-shadow: 0px 0px 15px -5px;
-  
   }
 
   .more-structure {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 30px;
   }
 
+  .contact-main-title {
+    font-family: 'Antro_Vectra_Bold';;
+    font-size: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .contact-methods-left {
+    margin-bottom: 10px;
+  }
   .contact-subtitle {
     text-align: center;
     width: 400px;
   }
 
   .message-box {
-    width:700px;
     height:220px;
-    margin-bottom:30px;
+    margin-bottom:20px;
     border:none;
     border-radius:10px;
     padding: 15px;
+    margin-right: 50px;
+    width:400px;
   }
-}
 
+  .submit-button {
+    width: 300px;
+    background-color: #91b689;
+    color:black;
+    border:none;
+    border-radius:5px;
+    transition: 0.5s;
+    animation: ease-in;
+    margin-bottom: 0px;
+    margin-top:0px;
+  }
 
-@media (max-width: 768px){
+  .submit-position1 {
+    display:none
+  }
 
-  .message-box {
-    width:350px;
+  .submit-position2 {
+    display:initial;
+  }
+  .send-and-result {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-right:15px;
+    margin-left:0px;
+  }
+  
+  .result-text {
+    font-size: 15px;
+    font-family: "Overpass";
+    padding-top: 10px;
+  }
+
+  .result1 {
+    display: none;
+  }  
+
+  .result2 {
+    display: initial;
   }
 
   .contact-subtitle {
     font-size: 30px;
     width: 350px;
     text-align: center;
-
   }
   
   .specific-contact-method {
@@ -196,13 +264,6 @@
   .contact-methods-left { 
   margin-right: 0px;
   margin-left: 0px;
-  }
-  .contact-main-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 100px;
-    margin-left: 0px;
-    margin-bottom: 60px;
-    text-align: center;
   }
 
   .form-structure {
@@ -218,9 +279,79 @@
 }
 
 @media (max-width: 425px){
+
+  .contact-main-title {
+    font-size: 70px;
+  }
+
+  .subtitle2 {
+    font-family: "Poppins";
+    text-align: center;
+    padding-bottom: 30px;
+    opacity: 0.7;
+    color:whitesmoke;
+    font-size:15px;
+  }
+
+  .form-structure {
+
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+  }
   .message-box {
     width:350px;
-    margin-left:none;
+    margin-left:17px;
+  }
+
+  .specific-contact-method {
+    margin-left:17px;
+  }
+  .submit-button {
+    width:200px;
+  }  
+ 
+}
+
+
+@media (max-width: 375px){
+
+  .message-box {
+    width:350px;
+  }
+
+  .more-structure {
+    margin-left:27px;
+
+  }
+
+  .contact-methods-left {
+    margin-bottom: 10px;
+    align-items: center;
+  }
+
+  .specific-contact-method {
+    margin-left:22px;
+  }
+
+}
+
+@media (max-width: 320px){
+
+  
+
+  .message-box {
+    width:250px;
+  }
+
+  .contact-methods-left {
+    width:200px;
+  }
+
+  .contact-main-title {
+    font-size: 60px;
+
+  
   }
 
 }
