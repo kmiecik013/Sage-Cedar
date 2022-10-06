@@ -1,5 +1,5 @@
 import { useState } from 'react'  
-import individual from "../../images/individual.jpeg";
+import tipi from "../../images/tipi.jpg";
 import "../../styles/card.css";
 import ModalId1 from "../ModalIds/ModalId1";
 import cards from "../Cards";
@@ -23,21 +23,21 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={individual} alt="" />
+        <img src={tipi} alt="" />
       </div>
       <div className="card-content">
-      <div className="title">
-        <h2>Individual</h2>
+      <div>
+        <h2 className="title" >Individual Session</h2>
       </div>
       <div className="description"> 
-        <p>"Hello I'm here" </p>
+    
       </div>
-      <div>
+      <div className="button-div">
       <button className="more-info-button"
             class={props.title}
             key={props.id}
             id= {props.id}
-            onClick= {handleClick} >More Info...</button>
+            onClick= {handleClick} >More Info</button>
        <ModalId1
        open={isOpen} onClose={()=> setIsOpen(false)}>
         </ModalId1>

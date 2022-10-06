@@ -3,31 +3,37 @@
   src: url("../fonts/Antro_Vectra_Bolder.otf");
 }
 .slick-slide  {
-  margin-top: 20px !important;
+  margin-top: 10px !important;
 }
 
-.slick-arrow {
-  scale:2;
-  opacity: 1;
-  margin-top:40px;
-  margin-left:50px;
-  margin-right: 50px;  
-  z-index: 1;
-  border-radius: 80px;
-  padding:1px 20px 5px 0px !important;
 
-}
-.service-part {
-  background-color: white;
+.subtitle-service {
+  font-family:"Poppins";
+  text-align: center;
+  font-size:35px;
 }
 
+
+
+.react-multi-carousel-dot-list {
+  position:relative!important;
+  
+
+}
+.react-multiple-carousel__arrow {
+ scale:1!important;
+}
+        
+.sage-service {
+  margin-top:50px;
+}
 
 .slick-next {
-  background-color:rgb(118, 156, 4) !important; 
+  background-color:rgb(130, 132, 129) !important; 
 }
 
 .slick-prev {
-  background-color:rgb(79, 126, 54) !important; 
+  background-color:rgb(130, 132, 129) !important; 
 }
 
 .slick-arrow:hover {
@@ -35,7 +41,7 @@
 }
 
 .seperate-card {
-  padding:50px;
+  padding:10px;
   height: 1000px;
 }
 .subtitle-text {
@@ -45,14 +51,14 @@
 
 .slider-part {
  padding-top: 70px;
- padding-left: 50px;
- padding-right: 50px;
+ margin-left:0px !important;
 }
   
 .service-title {
   font-family: 'Antro_Vectra_Bold';
   font-size: 100px;
-  margin-left: 120px;
+  margin-left: 80px;
+  padding-top: 100px;
 }
 
 .future-sess {
@@ -62,39 +68,29 @@
   margin-top: 80px;
 }
 
-@media (max-width: 1200px) {
-  .slick-arrow {
-    scale:2;
-    opacity: 1;
-    margin-top:40px;
-    margin-left:50px;
-    margin-right: 50px;  
-    z-index: 1;
-    border-radius: 80px;
-    padding:1px 20px 5px 0px !important;
-  
-  }
-}  
-
-@media (max-width: 1440px) {
-  .service-title {
-    margin-left: 80px;
-  }
+.service-part {
+  margin: 0 0;
 }
+
 
 @media (max-width: 768px){
 
   .service-title {
-
     font-size: 90px;
     margin-left: 0px;
-    margin-top: 100px;
     margin-bottom: 0px;
     text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .subtitle-text {
+    font-family: "Overpasss";
+    font-style: italic;
+    font-size: 10px;
+    width: 500px;
   }
  
 }
-
 
 
 @media (max-width: 425px){
@@ -121,12 +117,17 @@
     font-size: 25px;
     text-align: center;
   }
+
+.slick-list {
+  padding: 0 0 !important;
+}
+
 }
 
 @media (max-width: 425px){
 
   .service-title {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Antro_Vectra_Bold';
     font-size: 70px;
     margin-top: 60px;
     margin-bottom: 0px;

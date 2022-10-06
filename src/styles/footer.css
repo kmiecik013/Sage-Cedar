@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-around;
   padding:20px;
-  background-color: #e2fab3;
+  background-color:#728153;
 
 }
 
@@ -13,6 +13,8 @@
   padding-top:20px;
   padding-bottom: 20px;
 }
+
+
 
 .name-pic-pair {
   display: flex;
@@ -40,7 +42,7 @@
 
 .left-tag {
   font-size: 50px;
-  color: #456740;
+  color: white;
   font-family: "Overpasss";
   margin-right: 15px;
 }
@@ -48,12 +50,15 @@
 .info-text {
   font-size: 25px;
   margin-top: 5px;
+  font-family: "Poppins";
+  color: white;
 }
 
 .sage-email {
   font-size: 22px;
   margin-top: 5px;
   font-style: italic;
+  font-family: "Poppins";
 }
 
 .psycology-pic {
@@ -64,19 +69,40 @@
 .phone-number{
   margin-top: 5px;
   font-size: 25px;
+  font-family: "Poppins";
 }
 
+.copywrite {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  opacity: 0.7;
+}
+@media (max-width: 768px){
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 @media (max-width: 425px){
   .column-organization {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #F7EDDB;
+    background-color:#728153;
   }
 
   .main-contact {
     display: flex;
     flex-direction: column;
   }
+  .sage-email {
+    font-size: 18px;
+    margin-top: 5px;
+    font-style: italic;
+    font-family: "Poppins";
+  }
+
   }

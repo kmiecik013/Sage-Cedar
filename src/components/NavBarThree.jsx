@@ -45,12 +45,12 @@ const NavBarThree = () => {
       <div
         className={`nav-items ${isOpen && "open"}`}>
 
-          <a href="/">Home</a>
-          <a href="/#about">About</a>
-          <a href="/#therapist">Art Therapist</a>
-          <a href="/#service">Services</a>
-          <a href="/#contact" className="contact-nav-option">Contact</a>
-          <a href="/blog">Blog </a>
+          <a className="home" href="/">Home</a>
+          <a className="about"href="/#about">About</a>
+          <a className="therapist"href="/#therapist">Art Therapist</a>
+          <a className="services"href="/#services">Services</a>
+          <a className="contact"href="/contact">Contact</a>
+
           
     
         

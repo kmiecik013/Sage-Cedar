@@ -35,15 +35,25 @@ function App() {
   return (
 
     <div>
+    
 
   <NavBarThree />
 
   <Routes>
     <Route path="/blog" element={<Blog />} />
+    <Route path="/contact" element={<Contact />} />
     <Route path="/" element={
     <div>
   
-    <Home />
+    <Home />  
+    
+    <div className="gethelp-postioning">
+
+    <button className="gethelp-button"
+            onClick= {()=>setIsOpen(true)}>Get Help Now</button>
+       <Modal open={isOpen} onClose={()=> setIsOpen(false)}>
+        </Modal>
+    </div>
 
 
    <Sage className="first-sage">
@@ -55,15 +65,8 @@ function App() {
 
    
    <Service />
-
    <Contact />
-<div className="gethelp-postioning">
 
-    <button className="gethelp-button"
-            onClick= {()=>setIsOpen(true)}>Get Help Now</button>
-       <Modal open={isOpen} onClose={()=> setIsOpen(false)}>
-        </Modal>
-    </div>
    <Acknowledgement />
   <Footer />
 </div>} 

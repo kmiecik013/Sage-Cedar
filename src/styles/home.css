@@ -83,3 +83,10 @@
     
   }
 }
+
+@media (max-width: 320px){
+  .fade-in-text {
+    margin: 250px 30px 150px 30px;
+    font-size: 30px;
+  }
+}

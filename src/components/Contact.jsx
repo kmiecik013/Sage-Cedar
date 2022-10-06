@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 import "../styles/contact.css";
 import ContactInfo from "./ContactInfo";
 import Slide from 'react-reveal/Slide';
+import Sage from './Sage';
 
 const Result = () => {
   return (
@@ -40,18 +41,17 @@ export default function Contact() {
 
   setTimeout(() => {
     showResult(false)
-  }, 3000);
+  }, 7000);
 
   return (
     <div id="contact">
-      <Slide bottom>
       <div className="contact-one">
         <form className="form-structure" ref={form} onSubmit={sendEmail}>
           <h1 className="contact-main-title">Contact</h1>
           <div className="subtitles">
           <h1 className="contact-subtitle1">
             Ready to take the next step? </h1>
-            <h1 className="subtitle2">Send us a message
+            <h1 className="subtitle2">Send us a message!
           </h1>
           </div>
           <div className="more-structure">
@@ -60,7 +60,7 @@ export default function Contact() {
                 <input
                   type="text"
                   name="fullName"
-                  placeholder="Your Name"
+                  placeholder="First & Last Name"
                   className="input"
                 />
               </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   className="input"
                 />
               </div>
@@ -76,29 +76,37 @@ export default function Contact() {
                 <input
                   type="text"
                   name="phone"
-                  placeholder="Your Phone Number"
+                  placeholder="Phone Number"
                   className="input"
                 />
-              </div>
-              <input type="submit" value="Send" className="submit-button" />
+              </div> 
+              
+              <input type="submit" value="Submit" className="submit-button submit-position1" />
+             
             </div>
             <div className="message-box2 right">
               <textarea
                 name="message"
                 className="message-box"
-                placeholder="Your Message"
+                placeholder="Message"
               />
-
-              <div className="send-and-result">
-                <div className="result-text">{result ? <Result /> : null}</div>
-                
-                
+              <div className="result-text result1">{result ? <Result /> : null}</div>
               </div>
+              
             </div>
-          </div>
+              <div className="send-and-result"> 
+
+              <input type="submit" value="Submit" className="submit-button submit-position2" />
+              <div className="result-text result2">{result ? <Result /> : null}</div>
+            
+               
+                
+            </div>
+           
         </form>
+       <Sage />
       </div>
-      </Slide>
+    
     </div>
   );
 }

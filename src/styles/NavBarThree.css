@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #DFE8CC;
+  background: #728153;
   width: 100%;
   position: absolute;
 
@@ -34,40 +34,63 @@ a:-webkit-any-link {
   font-family: 'Antro_Vectra';
   font-style: none;
   margin-top: 20px;
+  color: aliceblue;
 
 }
 
-.nav-title:hover {
-  color:black;
-}
 
 .Navbar > .nav-logo {
   display: flex;
   flex-direction:center;  
   font-weight: 700;
   margin: 15px;
-  color: #C7D36F;
   font-family: "Overpasss";
-  font-weight:600;
   margin-left: 40px;
+  
 }
 
 .Navbar > .nav-logo > .navbar-image {
   padding-right: 5px;
   resize:none;
-  height:70px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  background-color: rgb(250, 254, 246);
+  margin-top: 50px;
+  padding: 7px;
+  z-index: 1000;
+  border: solid 3px #728153;
+  animation:ease-in-out;
+  transition: 0.5s;
 }
 
+.Navbar > .nav-logo > .navbar-image:hover {
+  box-shadow: 0px 0px 30px #aacb63;
+  cursor: pointer;
+  animation:ease-in-out;
+  transition: 0.5s;
+
+}
 .Navbar > .nav-logo > .nav-title {
   padding-left: 20px;
-  font-size: 30 px;
+  font-size: 30px;
+  margin-top: 70px;
+  color: aliceblue;
+  height: 40px;
+  margin-left: 10px;
+  animation:ease-out;
+  transition: 0.5s;
+
 }
 
 
 
-.Navbar > .nav-logo:hover {
-  color:#52734D;
+.Navbar > .nav-logo > .nav-title:hover {
   cursor:pointer;
+  color:#aacb63;
+  box-shadow: 0px 15px 17px -10px;
+  
 }
 
 
@@ -75,20 +98,22 @@ a:-webkit-any-link {
   margin-right: 40px;
 }
 .Navbar > .nav-items > a {
-  color: #52734D;
-  font-size: 25px;
+   color: aliceblue;
+  font-size: 20px;
   text-decoration: none;
   margin: 15px;
   position: relative;
   opacity: 0.9;
-  font-family: "Overpasss";
+  font-family: "Poppins";
+
 }
 
 
 .Navbar > .nav-items > a:hover {
   opacity: 1;
-  color:#DFE8CC;
+  color:#aacb63;
   text-shadow: 15px 15px 15px -5px;
+  box-shadow: 0px 15px 15px -5px;
  
 }
 
@@ -112,58 +137,62 @@ a:-webkit-any-link {
   display: none;
 }
 
-@media (max-width: 1290px) {
-  
-  .Navbar {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #DAE2B6;
-    z-index:10
-  }
-}
 
-.Navbar > .nav-logo {
-  display: flex;
-  flex-direction:row; 
-
-  font-weight: 700;
-  font-size: 27px;
-  margin: 15px;
-  color: #99A799;
-  font-family: "Overpasss";
-  font-weight:600;
-  margin-left: 40px;
-}
 
 @media (max-width: 1024px) {
-  .Navbar > .nav-logo > .nav-title {
-    padding-left: 20px;
-    font-size: 25px;
-    margin-left: 0px;
-    margin-bottom: 5px;
-    padding-left: none;
-    margin-top: 20px;
-  }
 
-  .Navbar > .nav-items > a {
-  font-size: 15px;
-  }
-
-  .Navbar > .nav-logo > .navbar-image {
-    height:60px;
-    margin-left: none;
-  }
-
-  .Navbar {
-    height:100px;
+  .Navbar > .nav-logo {
+    margin-left:10px;
   }
 
   .Navbar > .nav-items {
-    margin-right: 10px;
+    margin-right:10px;
   }
-}
+  
+  .Navbar > .nav-items > a {
+    margin-right: 5px;
+    font-size:18px;
+  }
+
+
+  .Navbar > .nav-logo > .navbar-image {
+    padding-right: 5px;
+    resize:none;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    background-color: rgb(250, 254, 246);
+    margin-top: 45px;
+    margin-left: 10px;
+    padding: 7px;
+    z-index: 1000;
+    border: solid 3px #728153;
+    animation:ease-in-out;
+    transition: 0.5s;
+  }
+  
+  .Navbar > .nav-logo > .navbar-image:hover {
+    box-shadow: 0px 0px 30px #aacb63;
+    cursor: pointer;
+    animation:ease-in-out;
+    transition: 0.5s;
+  
+  }
+  .Navbar > .nav-logo > .nav-title {
+    padding-left: 20px;
+    font-size: 25px;
+    margin-top: 65px;
+    color: aliceblue;
+    height: 40px;
+    margin-left: 0px;
+    animation:ease-out;
+    transition: 0.5s;
+  
+  }
+}  
+
+  
 
 
 @media (max-width: 768px) {
@@ -172,13 +201,15 @@ a:-webkit-any-link {
     top: 100px;
     display: flex;
     flex-direction: column;
-    
-    background: #DFE8CC;
+    background: #899a69;
     left: 0;
     width: 100%;
-    height: 350%;
+    height: 340%;
     transform: translateX(-100%);
     transition: all 0.8s;
+    padding-top: 25px;
+    padding-left: 20px;
+    z-index: 3;
   }
 
   .Navbar {
@@ -186,16 +217,29 @@ a:-webkit-any-link {
   }
 
   .Navbar > .nav-logo > .nav-title {
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 30px;
-    margin-left: 75px;
+    margin-left: 60px;
   }
   .Navbar > .nav-logo > .navbar-image {
     padding-right: 5px;
     resize:none;
-    height:60px;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 110px;
+    width: 110px;
+    margin-left: 30px;
+    background-color: rgb(250, 254, 246);
+    
   }
 
+  .Navbar > .nav-items > a:hover {
+    opacity: 1;
+    color:#aacb63;
+    text-shadow: none;
+    box-shadow: none;
+   
+  }
 
 
   .Navbar > .nav-items > a::before {
@@ -213,6 +257,7 @@ a:-webkit-any-link {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-right: 20px;
   }
 
   .nav-toggle > .bar {
@@ -262,25 +307,35 @@ a:-webkit-any-link {
 @media (max-width: 425px) {
   .Navbar > .nav-logo > .nav-title {
     padding-left: 20px;
-    font-size: 23px;
-    width: 220px;
-    margin-left: 0px;
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 0px;
     margin-bottom: 5px;
     padding-left: none;
     margin-top: 20px;
-    margin-top: 10px;
     text-align: center;
+    font-size: 23px;
   }
   .Navbar > .nav-logo {
     display: flex;
     flex-direction:center;  
     font-weight: 700;
-    margin: 15px;
     color: #C7D36F;
     font-family: "Overpasss";
     font-weight:600;
-    margin-left: 15px;
+  
   }
+
+  .Navbar > .nav-logo > .navbar-image {
+    display:none;
+  }
+
+  .Navbar > .nav-items {
+    padding-left: 10px;
+    height: 330%;
+    padding-top: 20px;
+  }
+
 
 }
 

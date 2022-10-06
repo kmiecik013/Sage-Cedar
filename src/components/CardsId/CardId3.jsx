@@ -3,6 +3,7 @@ import individual from "../../images/individual.jpeg";
 import "../../styles/card.css";
 import ModalId3 from "../ModalIds/ModalId3";
 import cards from "../Cards";
+import art from "../../images/art.jpeg"
 
 export default function CardId1(props) {
 
@@ -23,21 +24,21 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={individual} alt="" />
+        <img src={individual  } alt="" />
       </div>
       <div className="card-content">
-      <div className="title">
-        <h2>Individual</h2>
+      <div>
+        <h2 className="title">Art Therapy Workshops</h2>
       </div>
       <div className="description"> 
-        <p>"Hello I'm here" </p>
+      
       </div>
-      <div>
+      <div className="button-div">
       <button className="more-info-button"
             class={props.title}
             key={props.id}
             id= {props.id}
-            onClick= {handleClick} >More Info...</button>
+            onClick= {handleClick} >More Info</button>
        <ModalId3
        open={isOpen} onClose={()=> setIsOpen(false)}>
         </ModalId3>

@@ -1,5 +1,5 @@
 import '../styles/sage.css'
-import pic from "../images/SC.png"
+import pic from "../images/sage.png"
 
 
 

@@ -1,60 +1,114 @@
 .card-container {
   overflow: hidden;
-  box-shadow: 0px 0px 15px -5px;
   transition: 0.5s;
   animation: ease-in;
   border-radius: 10px;
   margin-bottom: 50px;
-  
+  opacity: 1.0;
+  backdrop-filter: blur(5px);
+  background-color: rgb(252, 254, 250);
+  box-shadow: 0px 0px 15px -5px;
+  animation:ease-out;
+  transition: 0.5s; 
+  position: relative;
+  overflow: hidden;
+  margin-top: 30px;
+  width:350px;
+  border-radius: 10px;
+  height: 470px;
 }
 
-.card-container {
-  margin-top: 0px;
-  margin-top: 30px;
-  width:500px;
+.title {
+  position: absolute;
+  bottom:5%;
+  left:0;
+  padding: 5px 10px 5px 30px;
+  background-color: white;
+  animation: ease-in;
+  transition: 0.5s;
+  margin-left:0px;
+  border-radius:  0px 10px 10px 0; 
 }
+
+
+
+
 
 
 .image-container img {
-  overflow: hidden;
-  height: 400px
+  height: 470px;
+  animation:ease-out;
+  transition: 0.5s;
+  border-radius: 0px;
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto;
+}
 
+.image-container:hover img {
+  opacity: 0.5;
+  transition: 0.5s;
+}
 
+.card-container:hover .more-info-button {
+
+  background-color: transparent;
+  animation: ease-in;
+  transition: 0.5s;
+  display:initial;
+  scale:1.00;
+  border: solid 1px white;
 }
 
 
-.card-container:hover .more-info-button {
-  background-color: #cedf74;
-  animation: ease-in;
-  transition: 0.5s;
-  text-decoration: underline;
+.card-container:hover .title {
+  background-color: transparent;
+  color:white;
+}
+
+.card-container:hover img {
+ opacity: 0.5;
 }
 
 .card-container:hover {
-  transform: scale(1.15);
-  background-color: #cedf74;
-  color:#3b4410;
+  transform: scale(1.10);
+  background-color: #728153;;
+  color:white;
+  filter:none;  
+  
+}
+
+.button-div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
   
 }
 
 .more-info-button {
-  transform: translate(200%, 0%);
-  font-family: "Overpasss";
-  font-style: italic;
-  font-size: 15px;
+  display:none;
+  font-family: "Poppins";
+  border: solid 2px black;
+  font-size: 25px;
   border-radius: 5px;
-  padding-left:5px;
-  padding-right:5px;
+  padding:10px;
   border:none;
-  background-color: white;
-  animation:ease-out;
-  transition: 0.5s;
+  background-color: transparent;
+  color:rgb(253, 252, 250);
+  
 }
-.more-info-button:hover {
-  background-color: #3b4410 !important;
-  color: white;
-  text-decoration: none !important;
 
+.more-info-button:hover {
+  text-decoration: none !important;
+  border: solid 1px white;
+  box-shadow: 0px 0px 15px -5px;
+  transform: scale(1.005);
 }
 
 .cards-structure {
@@ -78,63 +132,78 @@
 
   .card-container {
     overflow: hidden;
-    box-shadow: 0px 0px 15px -5px;
+    
     transition: 0.5s;
     animation: ease-in;
-    border-radius: 5px;
     margin-bottom: 50px;
     
   }
 
   .more-info-button {
-    transform: translate(130%, 0%);
-    font-family: "Overpasss";
-    font-style: italic;
-    font-size: 15px;
+    display:none;
+    font-family: "Poppins";
+    border: solid 2px black;
+    font-size: 25px;
     border-radius: 5px;
-    padding-left:5px;
-    padding-right:5px;
+    padding:10px;
     border:none;
-    background-color: white;
+    background-color: transparent;
     animation:ease-out;
     transition: 0.5s;
-  }
-
-  .card-container {
-    width: 330px;
-    margin-top: 0px;
-    margin-top: 30px;
-  }
-
-  .image-container img {
-    overflow: hidden;
-    height: 250px
+    color:rgb(253, 252, 250)
   }
 }
 
 @media (max-width: 768px){
 
+  .card-container {
+    overflow: hidden;
+    transition: 0.5s;
+    animation: ease-in;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    opacity: 1.0;
+    backdrop-filter: blur(5px);
+    background-color: rgb(252, 254, 250);
+    box-shadow: 0px 0px 15px -5px;
+    animation:ease-out;
+    transition: 0.5s; 
+    
+  }
+  
+  .title {
+    font-size:23px;
+    width: 100%;
+    border-radius: 0px 0px 0px 0px;
+    padding: 5px 10px 5px 10px;
 
+  }
+  
+  
+  .card-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    width:250px;
+    border-radius: 10px;
+    height: 350px;
+  }
+  
+  
+  
+  .image-container img {
+    height: 350px;
+    animation:ease-out;
+    transition: 0.5s;
+    border-radius: 0px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+  }
 
-.card-container {
-  width: 200px;
-  overflow: hidden;
-  box-shadow: 0px 0px 15px -5px;
-  transition: 0.5s;
-  animation: ease-in;
-  border-radius: 10px;
-  margin-bottom: 40px;
-}
-
-.image-container img {
-  overflow: hidden;
-  height: 100px
-}
-
-
-.card-container:hover {
-  transform: scale(1.00);
-}
 }
 
 

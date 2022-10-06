@@ -27,18 +27,18 @@ export default function CardId1(props) {
         <img src={group} alt="" />
       </div>
       <div className="card-content">
-      <div className="title">
-        <h2>Group</h2>
+      <div >
+        <h2 className="title">Group Session</h2>
       </div>
       <div className="description"> 
-        <p>"This is group" </p>
+       
       </div>
-      <div>
+      <div className="button-div">
       <button className="more-info-button"
             class={props.title}
             key={props.id}
             id= {props.id}
-            onClick= {handleClick} >More Info...</button>
+            onClick= {handleClick} >More Info</button>
        <ModalId2
        open={isOpen} onClose={()=> setIsOpen(false)}>
         </ModalId2>

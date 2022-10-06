@@ -3,24 +3,107 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #FEFFDE;
+  background-color: #f4f4f4;
   z-index: 1000;
-  border-radius:20px;
+  border-radius:10px;
 }
 
 .important-content {
-  padding: 120px 150px 150px 150px;
+  padding:50px 120px 60px 120px;
 }
+
+
+
 
 .x-botton {
   display: flex;
-  margin-left:580px;
+  margin-left:660px;
   margin-top:25px;
   border:none;
-  background-color: #FEFFDE;
+  background-color: #f4f4f4;
   font-size: 30px;
+  animation:ease-out;
+  transition: 0.5s;
+  position: absolute;
+}
+.x-botton:hover {
+  transform: scale(1.2);
+}
+
+.distres-box {
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  color:rgb(4, 4, 4);
+}
+
+
+
+.distress-title {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Overpasss";
+  margin-bottom: 5px;
+}
+
+.crisis-title {
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+  font-family: "Poppins";
+
+}
+
+.distress-number {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Overpasss";
+
+}
+
+.crisis-option {
+  background-color: rgb(187, 206, 152);
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation:ease-out;
+  transition: 0.5s;
+
+}
+
+.crisis-option:hover {
+  background-color: rgb(83, 123, 54);
+  cursor: pointer;
+  transform: scale(1.02);
+  color: white;
   
 }
+
+
+@media (max-width: 768px){
+  .important-content {
+    padding:40px 100px 40px 100px;
+  
+  }
+
+  .x-botton {
+    margin-left:440px;
+  }
+
+  .crisis-title {
+    font-size: 35px;
+    padding-top: 30px;
+  }
+
+  .distres-box {
+    width:300px;
+}
+
+.distress-title {
+  font-size: 20px;
+}
+}
+
 
 @media (max-width: 425px) {
 .important-content {
