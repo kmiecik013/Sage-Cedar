@@ -24,11 +24,11 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={individual  } alt="" />
+        <img src={individual} alt="" />
       </div>
       <div className="card-content">
       <div>
-        <h2 className="title">Art Therapy Workshops</h2>
+        <h2 className="title atw">Art Therapy Workshops</h2>
       </div>
       <div className="description"> 
       

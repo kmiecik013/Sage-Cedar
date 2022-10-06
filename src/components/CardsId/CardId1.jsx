@@ -1,5 +1,5 @@
 import { useState } from 'react'  
-import tipi from "../../images/tipi.jpg";
+import tipi from "../../images/tipi2.jpg";
 import "../../styles/card.css";
 import ModalId1 from "../ModalIds/ModalId1";
 import cards from "../Cards";

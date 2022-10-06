@@ -17,7 +17,6 @@
 
 .about-section {
   padding-bottom: 100px;
-  background-color: rgb(186, 204, 181); 
 }
 
 .about-page-structure {
@@ -84,7 +83,8 @@
 
 .about-section {
   padding-bottom: 100px;
-  background-color: rgb(186, 204, 181); 
+  background-color: #2e3e2b;
+
 }
 
 .card-body {
