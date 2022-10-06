@@ -2,7 +2,7 @@
   overflow: hidden;
   transition: 0.5s;
   animation: ease-in;
-  border-radius: 10px;
+  border-radius: 20px;
   margin-bottom: 50px;
   opacity: 1.0;
   backdrop-filter: blur(5px);
@@ -69,6 +69,10 @@
 .card-container:hover .title {
   background-color: transparent;
   color:white;
+}
+
+.card-container:hover img {
+ opacity: 0.5;
 }
 
 .card-container:hover img {

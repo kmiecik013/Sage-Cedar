@@ -13,6 +13,18 @@
   font-size:35px;
 }
 
+.react-multi-carousel-dot-list {
+  position:relative!important;
+  
+
+}
+.react-multiple-carousel__arrow {
+ scale:1!important;
+}
+        
+.sage-service {
+  margin-top:50px;
+}
 
 
 .react-multi-carousel-dot-list {
