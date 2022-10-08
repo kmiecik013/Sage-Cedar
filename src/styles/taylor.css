@@ -17,58 +17,35 @@
 
 .taylor-title {
   font-size: 70px;
-  margin-bottom: 10px;
-  margin-top: 50px;
   font-family: 'Antro_Vectra_Bold';
   text-align: center;
   color: white;
-  margin-top:100px;
+  margin-top:80px;
+  margin-bottom: 50px;
 }
 
 .structure-taylor-page {
   margin: 0 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
 }
 
-.taylor-description {
-  font-family: "Poppins";
+.all-descriptions {
+   font-family: "Poppins";
   font-size: 18px;
   color:white;
-  padding:20px;
   animation:ease-out;
   transition: 0.5s;
-  margin:10px 10px;
+  margin:0px 30px;
 }
 
 
-
-.sage-initiation {
-  font-family: "Poppins";
-  font-size: 18px;
-  color:#2e3e2b;
-  padding:20px;
-  animation:ease-out;
-  transition: 0.7s;
-  color:white;
-  margin:10px 10px;
-}
 
 .sage-initiation:hover {
   background-color: rgb(246, 246, 245);
   color:#2e3e2b;
   border-radius: 15px;
-}
-
-.sage-cedar-description {
-  
-  font-family: "Poppins";
-  font-size: 18px;
-  color:#2e3e2b;
-  padding:15px;
-  animation:ease-out;
-  transition: 0.5s;
-  color:white;
-  margin:10px 10px;
-  
 }
 
 .sage-cedar-description:hover {
@@ -77,16 +54,7 @@
   border-radius: 15px;
 }
 
-.more-cedar-description {
-  font-family: "Poppins";
-  color:#52734D;
-  font-size: 18px;
-  padding: 15px;
-  animation:ease-out;
-  transition: 0.5s;
-  color:white;
-  margin:10px 10px;
-}
+
 
 .more-cedar-description:hover {
   background-color: rgb(246, 246, 245);
@@ -95,9 +63,9 @@
 }
 
 .taylor-pic {
-  border-radius: 5px;
-  transform: scale(0.8);
-  margin-top:100px;
+  margin-left:0;
+  transform: scale(1);
+  height: 800px;
 }
 
 .taylor-pic:hover {
@@ -108,51 +76,40 @@
   
 }
 
-.structure-taylor-page {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 0px;
-}
+
 
 @media (max-width: 1440px) {
   .all-descriptions {
-    font-size: 15px;
-    margin-top:10px;
-    
-  }
-
-  .taylor-pic {
-    height:800px;
-
+    margin:10px 50px 0px 50px;
+    font-size: 16.5px;
   }
 
   .taylor-description {
-    
-    font-size: 17px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   
-  .sage-initiation {
-    
-    font-size: 17px;
-    margin-bottom: 0;
+  .sage-initiation { 
+    margin-bottom: 5px;
   }
   
   .sage-cedar-description {
-   
-    font-size: 17px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
   }
   
   .more-cedar-description {
-    font-size: 17px;
-    
+    margin-bottom: 5px;
   }
 
-  .all-descriptions {
-    margin-right: 20px;
+  .taylor-pic {
+    margin-left:0;
+    transform: scale(1);
+    height: 700px;
   }
 
+  .taylor-title {
+    margin-top:50px;
+    margin-bottom: 30px;
+  }
 
 }
 

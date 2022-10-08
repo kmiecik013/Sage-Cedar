@@ -38,17 +38,17 @@ export default function ModalId2({ open, children, onClose}) {
   if (!open) return null
     return ReactDom.createPortal(
       <>
-      <div style={OVERLAY_STYLES} />
+       <div style={OVERLAY_STYLES} />
       <div className="model-id-style"> 
       <img src={group} alt=""
               className="modal-image"/>
-        <div className="top-layer">
-        <h1 className="modal-title">Group session</h1>  
-        <button onClick={onClose}
-                className="x-bottonID"><GrClose /></button>
-        </div>
-        <div className="important-contentID">
+          <button onClick={onClose}
+                  className="x-bottonID"><GrClose /></button>
+        
       
+  
+        <div className="important-contentID">
+      <h1 className="modal-title">Individual session</h1>  
         
         
         <p className="modal-description">Individual art therapy sessions are great for those who need the time and space to process their thoughts, feelings, and emotions with the one-on-one support of the art therapist.

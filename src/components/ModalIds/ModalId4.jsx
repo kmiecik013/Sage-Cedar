@@ -2,7 +2,7 @@
 import ReactDom from 'react-dom'
 import { GrClose } from "react-icons/gr";
 import cards from "../Cards";
-import Davies from "../../images/Davies.jpeg";
+import team from "../../images/group3.jpg";
 
 
 
@@ -38,7 +38,7 @@ export default function ModalId4({ open, children, onClose}) {
     <>
     <div style={OVERLAY_STYLES} />
     <div className="model-id-style"> 
-    <img src={Davies} alt=""
+    <img src={team} alt=""
             className="modal-image"/>
       <div className="top-layer">
       <h1 className="modal-title">Team Building</h1>  

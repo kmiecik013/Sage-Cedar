@@ -5,6 +5,7 @@ import ModalId3 from "../ModalIds/ModalId3";
 import cards from "../Cards";
 import art from "../../images/art.jpeg"
 
+
 export default function CardId1(props) {
 
 
@@ -24,7 +25,7 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={art} alt="" />
+        <img src={individual} alt="" />
       </div>
       <div className="card-content">
       <div>

@@ -69,27 +69,44 @@ arrows
    renderArrowsWhenDisabled={false}
    renderButtonGroupOutside={false}
    renderDotsOutside
-  responsive={{
+   responsive={{
     desktop: {
       breakpoint: {
         max: 3000,
-        min: 1024
+        min: 1440
       },
-      items: 2.3,
+      items: 2.0,
       partialVisibilityGutter: 40
     },
     mobile: {
       breakpoint: {
         max: 464,
+        min: 376
+      },
+      items: 0.6,
+      partialVisibilityGutter: 30
+    },
+    mobile2: {
+      breakpoint: {
+        max: 375,
         min: 0
       },
-      items: 0.2,
+      items: 1,
       partialVisibilityGutter: 30
     },
     tablet: {
       breakpoint: {
         max: 1024,
-        min: 464
+        min: 769
+      },
+      items: 1.3  ,
+      partialVisibilityGutter: 10
+    },
+
+    tablet: {
+      breakpoint: {
+        max: 768,
+        min: 463
       },
       items: 1.3,
       partialVisibilityGutter: 10

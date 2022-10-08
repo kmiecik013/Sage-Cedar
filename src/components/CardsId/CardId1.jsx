@@ -1,5 +1,5 @@
 import { useState } from 'react'  
-import tipi from "../../images/tipi2.jpg";
+import lady from "../../images/lady.jpg";
 import "../../styles/card.css";
 import ModalId1 from "../ModalIds/ModalId1";
 import cards from "../Cards";
@@ -23,7 +23,7 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={tipi} alt="" />
+        <img src={lady} alt="" />
       </div>
       <div className="card-content">
       <div>

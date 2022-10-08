@@ -21,8 +21,8 @@ export default function Taylor() {
           <h1 className="taylor-title">
         Meet the Therapist
       </h1>
-          
-          <p className="taylor-description">
+          <div className="all-descriptions">
+          <p className="tayler-description">
             My name is Tayler Schenkeveld. I am a Métis woman and professionally
             trained Art Therapist practicing in Calgary, AB. In 2015, I
             completed my Bachelor of Arts with a major in Native Studies. I then
@@ -34,14 +34,14 @@ export default function Taylor() {
             attending ceremony with my clients. I strive to create safe and
             sacred space for all peoples to heal and grow.
           </p>
-          <p className="sage-initiation">
+          <p className="tayler-initiation">
             Sage and Cedar Art Therapy was established in late 2019 with a goal
             and mission to provide more culturally appropriate therapy to the
             community. The name emerged as I thought about the healing benefits
             that both traditional medicines, Sage and Cedar, provide and the
             parallels it serves in my Art Therapy practice.
           </p>
-          <p className="sage-cedar-description">
+          <p className="tayler-description">
             Sage and Cedar. Two words, packed with meaning. Sage is a
             traditional Indigenous medicine that when smudged (burned ) helps
             cleanse the mind, body and soul. It allows for one to be better able
@@ -49,11 +49,12 @@ export default function Taylor() {
             Just like sage, the practice of art therapy helps clients find their
             new beginnings.**
           </p>
-          <p className="more-cedar-description">
+          <p className="tayler-description">
             Cedar is used for both protection and restoration moving forward. My
             hope is that my clients feel the power of Cedar in and out of their
             Art Therapy session
           </p>
+          </div>
         </div>
        
       </div>

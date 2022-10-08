@@ -9,7 +9,7 @@
   background-color: rgb(252, 254, 250);
   box-shadow: 0px 0px 15px -5px;
   animation:ease-out;
-  transition: 0.5s; 
+  transition: 0.4s; 
   position: relative;
   overflow: hidden;
   margin-top: 30px;
@@ -25,7 +25,7 @@
   padding: 5px 10px 5px 30px;
   background-color: white;
   animation: ease-in;
-  transition: 0.5s;
+  transition: 0.4s;
   margin-left:0px;
   border-radius:  0px 10px 10px 0; 
 }
@@ -35,12 +35,10 @@
 }
 
 
-
-
 .image-container img {
   height: 470px;
   animation:ease-out;
-  transition: 0.5s;
+  transition: 0.4s;
   border-radius: 0px;
   position: absolute;
   top: -9999px;
@@ -52,14 +50,14 @@
 
 .image-container:hover img {
   opacity: 0.5;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .card-container:hover .more-info-button {
 
   background-color: transparent;
   animation: ease-in;
-  transition: 0.5s;
+  transition: 0.4s;
   display:initial;
   scale:1.00;
   border: solid 1px white;
@@ -139,7 +137,7 @@
   .card-container {
     overflow: hidden;
     
-    transition: 0.5s;
+    transition: 0.4s;
     animation: ease-in;
     margin-bottom: 50px;
     
@@ -155,7 +153,7 @@
     border:none;
     background-color: transparent;
     animation:ease-out;
-    transition: 0.5s;
+    transition: 0.4s;
     color:rgb(253, 252, 250)
   }
 }
@@ -178,10 +176,10 @@
   }
   
   .title {
-    font-size:23px;
+    font-size:22px;
     width: 100%;
     border-radius: 0px 0px 0px 0px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 20px;
 
   }
   
@@ -210,31 +208,117 @@
     margin: auto;
   }
 
+  .more-info-button {
+    font-size:20px;
+  }
+
 }
 
 
 @media (max-width: 425px){
   .card-container {
-    width: 300px;
-    margin-top: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    animation: ease-in;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    opacity: 1.0;
+    backdrop-filter: blur(5px);
+    background-color: rgb(252, 254, 250);
+    box-shadow: 0px 0px 15px -5px;
+    animation:ease-out;
+    transition: 0.5s; 
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    width:250x;
+    border-radius: 10px;
+    height: 350px;
+  }
   
+  .title {
+    position: absolute;
+    bottom:5%;
+    left:0;
+    padding: 5px 10px 5px 30px;
+    background-color: white;
+    animation: ease-in;
+    transition: 0.5s;
+    margin-left:0px;
+    border-radius:  0px 10px 10px 0; 
+  }
+  
+  .atw {
+    font-size: 30px;;
+  }
+  
+  
+  .image-container img {
+    height: 350px;
+    animation:ease-out;
+    transition: 0.5s;
+    border-radius: 0px;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
   }
 
-  .image-container img {
-    overflow: hidden;
-    height: 250px
-  
-  }
+
+
   }
 
   @media (max-width: 375px){
     .card-container {
-      width: 320px;
+      overflow: hidden;
+      transition: 0.5s;
+      animation: ease-in;
+      border-radius: 20px;
+      margin-bottom: 50px;
+      opacity: 1.0;
+      backdrop-filter: blur(5px);
+      background-color: rgb(252, 254, 250);
+      box-shadow: 0px 0px 15px -5px;
+      animation:ease-out;
+      transition: 0.5s; 
+      position: relative;
+      overflow: hidden;
+      margin-top: 30px;
+      width:200px;
+      border-radius: 10px;
+      height: 320px;
     }
+    
+    .title {
+      position: absolute;
+      bottom:5%;
+      left:0;
+      padding: 5px 10px 5px 30px;
+      background-color: white;
+      animation: ease-in;
+      transition: 0.5s;
+      margin-left:0px;
+      border-radius:  0px 10px 10px 0; 
+    }
+    
+    .atw {
+      font-size: 30px;;
+    }
+    
     
     .image-container img {
-      overflow: hidden;
-      height: 220px
-    
+      height: 320px;
+      animation:ease-out;
+      transition: 0.5s;
+      border-radius: 0px;
+      position: absolute;
+      top: -9999px;
+      bottom: -9999px;
+      left: -9999px;
+      right: -9999px;
+      margin: auto;
     }
+  
     }

@@ -2,23 +2,9 @@ import "../../styles/modals/modal1.css";
 import ReactDom from 'react-dom'
 import { GrClose } from "react-icons/gr";
 import cards from "../Cards";
-import individual from "../../images/individual.jpeg";
+import lady from "../../images/lady2.jpg";
 
 
-
-
-const MODAL_STYLES = {
-  position: 'fixed',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  backgroundColor: '#edf5eb',
-  padding: '300px',
-  zIndex: 1000,
-  borderRadius:'20px',
-
-
-}
 
 const OVERLAY_STYLES = {
   position: 'fixed',
@@ -39,18 +25,20 @@ export default function ModalId1({ open, children, onClose}) {
       <>
       <div style={OVERLAY_STYLES} />
       <div className="model-id-style"> 
-      <img src={individual} alt=""
+      <img src={lady} alt=""
               className="modal-image"/>
-        <div className="top-layer">
-        <h1 className="modal-title">Individual session</h1>  
-        <button onClick={onClose}
-                className="x-bottonID"><GrClose /></button>
-        </div>
-        <div className="important-contentID">
+          <button onClick={onClose}
+                  className="x-bottonID"><GrClose /></button>
+        
       
+  
+        <div className="important-contentID">
+      <h1 className="modal-title">Individual session</h1>  
         
         
         <p className="modal-description">Individual art therapy sessions are great for those who need the time and space to process their thoughts, feelings, and emotions with the one-on-one support of the art therapist.
+This can lead to in-depth personal insights and resolution.</p>
+<p className="modal-description">Individual art therapy sessions are great for those who need the time and space to process their thoughts, feelings, and emotions with the one-on-one support of the art therapist.
 This can lead to in-depth personal insights and resolution.</p>
         <p className="modal-price">Price: $1,000,000</p>
 

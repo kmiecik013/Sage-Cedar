@@ -2,7 +2,7 @@ import "../../styles/modals/modal1.css";
 import ReactDom from 'react-dom'
 import { GrClose } from "react-icons/gr";
 import cards from "../Cards";
-import art from "../../images/art.jpeg"
+import individual from "../../images/individual.jpeg";
 
 
 
@@ -39,7 +39,7 @@ export default function ModalId3({ open, children, onClose}) {
     <>
     <div style={OVERLAY_STYLES} />
     <div className="model-id-style"> 
-    <img src={art} alt=""
+    <img src={individual} alt=""
             className="modal-image"/>
       <div className="top-layer">
       <h1 className="modal-title">Art Therapy Workshops</h1>  

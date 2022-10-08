@@ -47,7 +47,6 @@ export default function Contact() {
     <div id="contact">
       <div className="contact-one">
         <form className="form-structure" ref={form} onSubmit={sendEmail}>
-          <h1 className="contact-main-title">Contact</h1>
           <div className="subtitles">
           <h1 className="contact-subtitle1">
             Ready to take the next step? </h1>

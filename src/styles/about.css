@@ -18,10 +18,11 @@
 
 .about-section {
   padding-bottom: 100px;
+  background-color: #728153;
 }
 
 .about-page-structure {
-  margin: 0 20px;
+  margin: 0 0px;
 }
 
 
@@ -33,7 +34,6 @@
 
 .sage-img {
   height:500px;
-  margin-top: 80px;
 }
 
 .sage-img2 {
@@ -52,7 +52,6 @@
 
 
 .about-page-structure {
-  margin-top: 100px;
   display: flex;
   justify-content: space-around;
 }
@@ -61,30 +60,39 @@
 
  
   font-family: "Overpass";
-  font-size: 40px;
-  color:#2a4626;
-  padding:0px 60px;
+  font-size: 25px;
+  padding:0px 100px;
   animation:ease-out;
   transition: 0.5s;
   
 }
 
 .art-subtitle {
-  font-size: 100px;
+  font-size: 80px;
   font-family: 'Antro_Vectra_Bold';
   font-weight:bolder;
   text-align: center;
   margin-right: 120px;
-  margin-bottom: 50px;
   margin-top: 150px;
+  color: white;
+  padding-bottom: 50px;
+}
+.text-on-left {
+  color:black;
 }
 
+.text-on-left {
+  margin: 0 50px;
+  font-size: 20px;;
+}
 
 @media (max-width: 1440px) {
 
+
+
 .about-section {
   padding-bottom: 100px;
-  background-color: #2e3e2b;
+  background-color: #728153;
 
 }
 
@@ -94,9 +102,17 @@
   flex-direction:column;
 }
 
+.art-therapy-description {
+  font-family: "Overpass";
+  font-size: 20px;
+  padding:0px 100px;
+  animation:ease-out;
+  transition: 0.5s;
+  color:white;
+}
+
 .sage-img {
   height:400px;
-  margin-top: 80px;
 }
 
 .sage-img2 {
@@ -109,31 +125,22 @@
 }
 
 .about-page-structure {
-  margin-top: 100px;
   display: flex;
   justify-content: space-around;
 }
 
-.art-therapy-description {
-
-  font-family: "Overpass";
-  font-size: 20px;
-  color:#2a4626;
-  padding:0px 60px;
-  animation:ease-out;
-  transition: 0.5s;
-  
-}
 
 .art-subtitle {
   font-size: 70px;
   font-family: 'Antro_Vectra_Bold';
   font-weight:bolder;
   text-align: center;
-  margin-right: 120px;
-  margin-bottom: 50px;
-  margin-top: 100px;
+  color: white;
+  padding-bottom: 50px;
+  margin: 80px 20px 0px 20px;
+
 }
+
 
 }
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'  
-import Davies from "../../images/group2.jpg";
+import team from "../../images/group2.jpg";
 import "../../styles/card.css";
 import ModalId4 from "../ModalIds/ModalId4";
 import cards from "../Cards";
@@ -23,7 +23,7 @@ export default function CardId1(props) {
   return (
     <div className="card-container">
       <div className="image-container">
-        <img src={Davies} alt="" />
+        <img src={team} alt="" />
       </div>
       <div className="card-content">
       <div >

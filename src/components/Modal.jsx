@@ -39,7 +39,7 @@ export default function Modal({ open, children, onClose }) {
         <div className="distres-box">
         <div className="crisis-option">
           <h1 className="distress-title">Distress Center</h1>
-          <h1 className="distress-number"> 1-403-266-1601 </h1>
+          <p className="distress-number"> 1-403-266-1601 </p>
           </div>
           <div className="crisis-option">
           <h1 className="distress-title">Hope For Wellness Help</h1>

@@ -8,9 +8,10 @@
 
 
 .subtitle-service {
-  font-family:"Poppins";
+  font-family:"Overpasss";
   text-align: center;
   font-size:35px;
+  padding-bottom: 50px;
 }
 
 .react-multi-carousel-dot-list {
@@ -67,7 +68,7 @@
 }
   
 .service-title {
-  font-family: 'Poppins';
+  font-family: 'Overpasss';
   font-size: 100px;
   margin-left: 80px;
   padding-top: 100px;
